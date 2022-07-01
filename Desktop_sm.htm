@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html ##MANIFEST## xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Babel</title>
+    ##EMULATEIE##
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="google" value="notranslate" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="?WCI=RD3&WCE=GZ&FN=rd3_sm.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="js/JqueryToastMessage/resources/css/jquery.toastmessage.css">
+  </head>
+  <body onload="javascript:##INITAPP##">
+    <!-- E' possibile personalizzare l'aspetto della pagina che viene caricata quando 
+       si deve attendere il caricamento dei javascript -->
+  <!-- You can customize the appearance of the page that is loaded when 
+       waiting for javascript to be loaded -->
+  <div id="wait-box">
+    <img id="wait-box-image" src="images/inde.gif" style="display:none">
+    <img id="wait-box-image2" src="images/warn2.gif">
+    <div id="wait-box-text">Enable javascript to continue</div>
+    <div id="wait-box-progress"></div>
+  </div>
+  <script type="text/javascript">
+  var WaitTimer = null;
+  var Size = 0;
+  var RD3_StartAppMsg = "##STARTAPP##";
+  var RD3_AppLanguage = "##APPLANGUAGE##";
+  document.getElementById("wait-box-image").style.display = "";
+  document.getElementById("wait-box-image2").style.display ="none";
+  document.getElementById("wait-box-text").innerHTML = "##LOADCOMP##";  
+  function AnimateWait() 
+  {  
+    WaitTimer = window.setTimeout("AnimateWait()", 30);
+    Size += 5;
+    if (Size<=200)
+    {  
+      var progress = document.getElementById("wait-box-progress");
+      if (progress)
+        progress.style.width = Size + "px";
+    }
+  }
+  AnimateWait();
+  </script>
+  <!-- Gli script vengono caricati dopo aver definito il wait-box, che appare subito -->
+  <!-- Scripts are loaded after defining the wait-box, which appears immediately -->
+  <script type="text/javascript">function IEDebug() { debugger; }</script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+  
+  <!-- Classi di utilita' -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+
+  <!-- Utility classes -->
+  <script type="text/javascript" src="js/my_utils.js"></script>
+
+  <!-- Primus -->
+  <script src="js/primus.js" type="text/javascript" ></script>
+  <script src="js/primus_client.js" type="text/javascript" ></script>
+
+  <!-- Toast Message -->
+  <script src="js/JqueryToastMessage/jquery.toastmessage.js" type="text/javascript" ></script>
+  
+  <!-- Firma due -->
+  <script src="js/firma_due.js" type="text/javascript" ></script>
+
+  <!-- Personalizzazione -->
+  <script type="text/javascript" src="js/datepicker.js"></script>
+  <script type="text/javascript" src="js/eye.js"></script>
+  <script type="text/javascript" src="js/utils.js"></script>
+
+  <!-- CUSTOM - Calendario -->
+  <link rel="stylesheet" media="screen" type="text/css" href="css/datepicker.css" />
+
+  _ICD_JS_INCLUDE CKEDITOR
+  _ICD_JS_INCLUDE JQPLOT
+  _ICD_JS_INCLUDE CHARTJS
+  _ICD_JS_INCLUDE GOOGLECHART
+  ##SWFUPLOAD##
+  _ICD_JS_INCLUDE SOUNDMANAGER

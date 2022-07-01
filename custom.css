@@ -1,0 +1,1001 @@
+/*
+per apportare modifiche al layout, occorre produrre un custom.css da inserire nella Directory Custom dell'applicazione.
+Di seguito si riportano le classi utilizzate nelle varie sezioni dell'interfaccia.
+*/
+BODY {
+    background-color: #FFFFFF;
+    border: medium none;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+#welcome-container {
+    background-color: white;
+    border: 1px solid #4D6325;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+/*
+Abilito la selezionabilità del campo
+*/
+SPAN
+{
+	-moz-user-select: text;
+	-ms-user-select: text;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione
+*/
+
+#header-container {
+    background-color: #993366;
+    background-image: url("images/applhdr.gif");
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #4D6325;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    height: 30px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione --> pulsante per visualizzare/nascondere la barrra dei menù verticale
+*/
+
+#header-suppress-menu {
+    cursor: pointer;
+    margin-bottom: 1px;
+    padding-left: 5px;
+    vertical-align: 3px;
+}
+
+.header-suppress-menu-hl {
+    background-image: url("images/btn_bk.gif");
+    background-position: 5px 0;
+    background-repeat: no-repeat;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione --> nome dell'applicazione
+*/
+
+#header-main-caption {
+    line-height: 32px;
+    margin-left: 8px;
+    vertical-align: 3px;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione --> spazio fra nome dell'applicazione e command box "Cmd"
+*/
+
+#header-divider {
+    vertical-align: 5px;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione --> command box "Cmd"
+*/
+
+#header-command-box {
+    border-bottom: 1px dotted white;
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: normal;
+    height: 22px;
+    line-height: 24px;
+    margin-bottom: 2px;
+    margin-right: 16px;
+    padding-bottom: 1px;
+    vertical-align: 5px;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione --> pulsante di debug
+*/
+
+#header-debug-image {
+    cursor: pointer;
+    margin-right: 8px;
+    vertical-align: 3px;
+}
+
+.header-debug-image-hl {
+    background-image: url("images/btn_bk.gif");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+/*
+Contenitore Testata con nome dell'applicazione --> pulsante per la chiusura dell'applicazione
+*/
+
+#header-close-app {
+    cursor: pointer;
+    vertical-align: 3px;
+}
+
+.header-close-app-hl {
+    background-image: url("images/btn_bk.gif");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.toolbar-container {
+    background-color: transparent;
+	background-image: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 20px;
+    margin-right: 2px;
+    padding-top: 1px;
+    vertical-align: top;
+}
+.toolbar-command-showcaption {
+    color: black;
+    cursor: pointer;
+    font-size: 10pt;
+	font-weight: bold;	
+    padding: 2px;
+    width: 35px;
+	margin-right: 15px;
+}
+#toolbar-container {
+    background-color: #4D6325;
+	/*background-image: url("images/applhdr180.gif");*/
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    position: absolute;
+    width: 300px;
+}
+.popup-menu-container {
+    background-color: #EBEBEB;
+    border: 1px solid #99BBE8;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 350px;
+	/* font-weight: bold; */
+}
+.popup-cell-icon {
+    background-color: #D6D6D6;
+    cursor: pointer;
+    font-size: 1pt;
+    height: 1px;
+    padding: 5px;
+    width: 20px;
+}
+.popup-menu-hover {
+    /*background-color: #6A9955;*/
+	background-color: #D6D6D6;
+}
+.popup-cell-text {
+    color: black;
+    cursor: pointer;
+    font-size: 8pt;
+    height: 18px;
+    padding: 2px 2px 2px 5px;
+    width: 100%;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra
+*/
+
+#side-menu-container {
+    background-color: transparent;
+    overflow: hidden;
+    padding: 5px 0 5px 5px;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore dei vari menù
+*/
+
+#menu-container {
+    background-color: #DEE7F6;
+    border-left: 1px solid #99BBE8;
+    border-right: 1px solid #99BBE8;
+    border-top: 1px solid #99BBE8;
+    padding-bottom: 8px;
+    vertical-align: top;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore dei vari menù --> Menù Elenco videate
+*/
+.menu-commandset-level-1 {
+    background-image: url("images/cmdslev1bg.gif"); 
+    border-bottom: 1px solid #99BBE8;
+    color: #004D89; 
+    cursor: pointer;
+    height: 21px;
+    overflow: hidden;
+    padding-left: 2px;
+    white-space: nowrap;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore dei vari menù --> Menù Elenco videate --> sezione adibita alla visualizzazine delle Videate: posizionandosi sopra col mouse è possibile modificarne il layout
+*/
+
+.menu-commandset-level-1:hover {
+    background-image: url("images/cmdslev1bg_hl.gif");
+    border-bottom: 1px solid #FF9900;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore dei vari menù --> Menù Elenco videate --> sezione adibita alla visualizzazine delle Videate: link che permette di aprire le videate
+*/
+
+.menu-commandset-link-level-1 {
+    color: #004D89;
+    cursor: pointer;
+    font-size: 8pt;
+    font-weight: bold;
+    line-height: 20px;
+    padding-left: 4px;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore dei vari menù --> Menù Elenco videate --> Elenco videate
+*/
+
+.menu-command-level-2 {
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte
+*/
+
+#form-list-container {
+    background-color: #DEE7F6;
+    border-bottom: 1px solid #99BBE8;
+    border-left: 1px solid #99BBE8;
+    border-right: 1px solid #99BBE8;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte --> testata delle videate aperte
+*/
+
+.form-list-header {
+    color: #0E4D79;
+    font-size: 8pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+    text-indent: 16px;
+    width: 100%;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte --> contenitore elenco videate aperte
+*/
+
+.form-list-entry-container {
+    background-color: #DEE7F6;
+    width: 100%;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte --> contenitore elenco videate aperte --> videata aperta
+*/
+
+.form-list-item {
+    height: 24px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte --> contenitore elenco videate aperte --> videata aperta --> titolo della videata
+*/
+
+.form-list-active-caption {
+    background-color: white;
+    background-image: url("images/flselitembg.gif");
+    color: #0E4D79;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    vertical-align: bottom;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte --> contenitore elenco videate aperte --> videata aperta --> stato della videata: attiva
+*/
+
+.form-list-active-img {
+    background-image: url("images/selflrd3.gif");
+    display: inline-block;
+    height: 24px;
+    vertical-align: bottom;
+    width: 27px;
+}
+
+/*
+Contenitore Barra dei menu verticale di sisnistra --> contenitore videate aperte --> contenitore elenco videate aperte --> videata aperta --> stato della videata: non attiva
+*/
+
+.form-list-img {
+    background-image: url("images/noflrd3.gif");
+    background-position: 0 0;
+    display: inline-block;
+    height: 24px;
+    vertical-align: bottom;
+    width: 27px;
+}
+
+/*
+Contenitore delle Videate attive
+*/
+
+#forms-container {
+    background-color: transparent;
+    border-top: 0px solid #80AF27;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    z-index: 0;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva
+*/
+
+.form-container {
+    background-color: #FAF9F4;
+    border: 1px solid #81b027;
+    height: 100%;
+    text-align: left;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore testata della videata
+*/
+
+.form-caption-container {
+    background-color: #993366;
+    background-image: none;
+    background-repeat: repeat-x;
+    color: white;
+    font-size: 8pt;
+    font-weight: bold;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore testata della videata --> pulsante chiusura della videata
+*/
+
+.form-caption-image {
+    background-image: url("images/btn_bk.gif");
+    background-position: 4px 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-left: 4px;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore testata della videata --> titolo della videata
+*/
+
+.form-caption-text {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 4px;
+    vertical-align: top;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore messaggi rivolti all'utente
+*/
+
+.form-message-container {
+    background-color: #993366;
+    background-image: url("images/msgbg.gif");
+    border-bottom: 0px solid #99BBE8;
+    font-size: 8pt;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore messaggi rivolti all'utente --> messaggio rivolto all'utente
+*/
+
+.form-message-div {
+    height: 20px;
+    overflow: hidden;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-top: 1px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore messaggi rivolti all'utente --> messaggio rivolto all'utente --> icona
+*/
+
+.form-message-icon {
+    padding-bottom: 1px;
+    padding-right: 4px;
+    padding-top: 1px;
+    vertical-align: middle;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore messaggi rivolti all'utente --> messaggio rivolto all'utente --> testo del messaggio
+*/
+
+.form-message-text {
+    vertical-align: middle;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli
+*/
+
+.form-frames-container {
+    height: 100%;
+    overflow: auto;
+    padding-top: 2px;
+    position: absolute;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello
+*/
+
+.frame-container-top {
+    background-color: transparent;
+    border: 0 none;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello
+*/
+
+.frame-container {
+    background-color: transparent;
+    border: medium none;
+    overflow: hidden;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> contenitore toolbar del pannello
+*/
+
+.frame-toolbar-container {
+    background-color: #DEE7F6;
+    background-image: url("images/frmcaptionbg.gif");
+    border-bottom: 1px solid #AAC6EC;
+    height: 24px;
+    overflow: hidden;
+    padding-top: 3px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore toolbar del pannello --> zone/contenitori all'interno della toolbar
+*/
+
+.panel-toolbar-zone {
+    height: 26px;
+    padding: 2px 4px 0;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore toolbar del pannello --> zone/contenitori all'interno della toolbar --> pulsanti all'interno di una zona della toolbar
+*/
+
+.frame-toolbar-button {
+    background-image: url("images/btn.gif");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-right: 4px;
+    vertical-align: bottom;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore toolbar del pannello --> zone/contenitori all'interno della toolbar --> descrizione pannello
+*/
+
+.frame-toolbar-caption {
+    color: #004D89;
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: bold;
+    line-height: 22px;
+    overflow: hidden;
+    padding-left: 8px;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore toolbar del pannello --> zone/contenitori all'interno della toolbar --> descrizione operazione eseguibile dall'utente sul pannello: stato del pannello
+*/
+
+.panel-status-qbe {
+    color: green;
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: bold;
+    line-height: 22px;
+    overflow: hidden;
+    padding-right: 12px;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenuto del pannello
+*/
+
+.frame-content-container {
+    background-color: transparent;
+    overflow: auto;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello
+*/
+
+.frame-content-container {
+    background-color: transparent;
+    overflow: auto;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista
+*/
+
+.panel-list-container {
+    background-color: transparent;
+    border: medium none;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> lista/tabella
+*/
+/*
+element.style {
+    border: 1px solid #9EB6CE;
+    height: 156px;
+    left: 20px;
+    top: 0;
+    width: 847px;
+    z-index: 0;
+}
+*/
+.panel-list-list-container {
+    border: 1px solid black;
+    padding: 0;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> lista/tabella --> testata della colonna
+*/
+/*
+element.style {
+    background: -moz-linear-gradient(center top , #F9F9F9, #EBECEE) repeat scroll 0 0 transparent;
+    border: 1px solid #9EB6CE;
+    color: #50503C;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: normal;
+    height: 27px;
+    left: -1px;
+    padding: 2px;
+    text-align: left;
+    text-decoration: none;
+    top: -1px;
+    width: 163px;
+}
+*/
+.panel-field-caption-list {
+    background-image: url("images/pancapbg.gif");
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    border: medium none;
+    overflow: hidden;
+    padding: 2px;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> lista/tabella --> celle della colonna
+*/
+/*
+element.style {
+    height: 121px;
+    left: -1px;
+    top: 36px;
+    width: 169px;
+}
+*/
+.panel-field-list-box {
+    border: medium none;
+    overflow: hidden;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> dettaglio in una visualizzazione a lista: testata cella
+*/
+/*
+element.style {
+    background-color: transparent;
+    border: medium none;
+    color: #50503C;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: normal;
+    height: 39px;
+    left: 20px;
+    padding: 3px 2px;
+    text-align: left;
+    text-decoration: none;
+    top: 176px;
+    width: 93px;
+    z-index: 1;
+}
+*/
+.panel-field-caption-form {
+    border: medium none;
+    overflow: hidden;
+    padding: 2px;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> dettaglio in una visualizzazione a lista: dettaglio cella
+*/
+/*
+element.style {
+    background-color: #E2FFE1;
+    border: 1px solid #9EB6CE;
+    color: #202020;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: normal;
+    height: 43px;
+    left: 120px;
+    overflow: auto;
+    text-align: left;
+    text-decoration: none;
+    top: 176px;
+    width: 395px;
+    z-index: 1;
+}
+*/
+.panel-field-value-list {
+    border: medium none;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> pulsante multiselezione righe della lista
+*/
+/*
+element.style {
+    left: 5px;
+    top: 0;
+    z-index: 0;
+}
+*/
+.panel-multisel-command {
+    cursor: pointer;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> pulsante selezione di una singola riga
+*/
+/*
+element.style {
+    left: 0;
+    top: 36px;
+    z-index: 0;
+}
+*/
+.panel-row-selector {
+    cursor: pointer;
+    padding-left: 3px;
+    padding-top: 2px;
+    position: absolute;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> contenitore scrollbar per scorrere la lista
+*/
+/*
+element.style {
+    height: 121px;
+    left: 868px;
+    top: 37px;
+    z-index: 0;
+}
+*/
+.panel-scroll-container {
+    border: medium none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    width: 18px;
+}
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a lista --> contenitore scrollbar per scorrere la lista --> scrollbar per scorrere la lista
+*/
+/*
+element.style {
+    height: 161px;
+}
+*/
+.panel-scroll-content {
+    background-color: transparent;
+    width: 1px;
+}
+
+
+
+
+/*
+Contenitore delle Videate attive --> Contenitore di una specifica videata attiva --> contenitore pannelli --> contenitore esterno singolo pannello --> contenitore pannello --> 
+--> contenitore contenuto del pannello --> contenitore visualizzazione a dettaglio
+*/
+
+.panel-form-container {
+    background-color: transparent;
+    border: medium none;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+/*Linguetta attiva*/
+.selected-tab-caption-0 {
+background-color: #EBEBEB;
+border-bottom: #EBEBEB 1px solid;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span centrale di una caption    */
+/* della tabbed view                                     */
+/* *******************************************************/
+.tab-caption-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: #99bbe8 1px solid;
+  background-color: #ebefe8;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: none;
+}
+
+
+/* *******************************************************/
+/* Classe applicata allo span centrale di una caption    */
+/* della tabbed view (HILIGHT)                           */
+/* *******************************************************/
+.tab-caption-hl-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: #99bbe8 1px solid;
+  background-color: #f3f9ef;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: none;
+  background-position: 0px -20px;
+}
+
+.pages-container {
+    padding-bottom: 0px;
+    padding-top: 2px;
+	background-color: #FAF9F4;
+	margin-bottom: 10px;
+}
+
+/* *******************************************************/
+/* Classe applicata allo SPAN che contiene il nome della */
+/* pagina e la sua icona  (Selezionata)                  */
+/* *******************************************************/
+.selected-page-header-container-0
+{
+  display: inline-block;
+  height: 20px;
+  border: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: #99bbe8 1px solid;
+  vertical-align: top;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #DBEAD3;
+}
+
+
+/* *******************************************************/
+/* Classe applicata allo SPAN contenitore della caption  */
+/* di una pagina non selezionata                         */
+/* *******************************************************/
+.page-container-0
+{
+  display: inline-block;
+  background-color: #EBEFE8;
+  background-image: none;
+  height: 20px;
+  border: 0px;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: #99bbe8 1px solid;
+  white-space: nowrap;
+  border-top: 2px solid #FAF9F4;
+  vertical-align: bottom;
+}
+
+/* *******************************************************/
+/* Classe applicata allo SPAN contenitore della caption  */
+/* di una pagina non selezionata (HILIGHT)               */
+/* *******************************************************/
+.page-container-hl-0
+{
+  display: inline-block;
+  background-color: #e1dfc4;
+  background-image: none;
+  height: 20px;
+  border: 0px;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: #99bbe8 1px solid;
+  white-space: nowrap;
+  border-top: 2px solid #FAF9F4;
+  background-position: 0px 40px;
+  vertical-align: bottom;
+  background-color: #f3f9ef;
+}
+
+/* *****************************************************/
+/* Classe applicata al div contenitore delle caption   */
+/* delle tab                                           */
+/* *****************************************************/
+.toolstrip-container
+{
+	background-color: transparent;
+	padding-top: 2px;
+}
+/* **********************************************************/
+/* Correzione problema che le textarea non andavano a capo  */
+/* **********************************************************/
+.panel-value-textarea {
+    white-space: normal;
+}
+
+div.popup-menu-container{
+	/*width: 100px;!important*/
+    max-height: 200px!important;
+    overflow: auto!important;
+}
+tr.popup-cell-text{
+	height: 20px!important;
+}
+
+/* Centra le icone*/
+.panel-field-value-list img {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Questo serve per la colonna conservazione di gedi. fa si che le immagini siano più piccole*/
+.conservazione > img {
+	height: 100%;
+}
+
+/* Per allineare meglio i dati sui pannelli del cruscotto parer */
+.parer-line {
+	line-height: 35px;
+}
+
+/*.panel-field-list-box + .parer-line { */
+.panel-field-caption-list.parer-line {
+    line-height: initial;
+}
+.text-italic-gray{
+	font-style: italic !important;
+	color: gray !important;
+}

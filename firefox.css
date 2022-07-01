@@ -1,0 +1,254 @@
+/* ************************************************
+// Instant Developer RD3 Framework
+// (c) 1999-2009 Pro Gamma Srl - All rights reserved
+//
+// Foglio di stile per gli elementi RD3
+// specifico per il browser FireFox
+// ************************************************/
+
+textarea
+{
+  resize: none;
+  margin: 0 0 0 0;
+}
+
+#header-main-caption
+{
+  line-height: 28px;
+}
+
+.panel-value-image
+{
+	padding-top: 2px;
+	vertical-align: -5px;
+}
+
+.panel-toolbar-zone
+{
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 0px;
+}
+
+.panel-toolbarsmall-zone
+{
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 0px;
+}
+
+.book-toolbar-button
+{
+	vertical-align: middle;
+}
+
+.book-toolbar-button-hover
+{
+	vertical-align: middle;
+}
+
+.panel-toolbar-button
+{
+	vertical-align: middle;
+}
+
+.panel-toolbar-button-down
+{
+	vertical-align: middle;
+}
+
+.panel-toolbar-button-hover
+{
+	vertical-align: middle;
+}
+
+.panel-toolbar-button-small
+{
+	vertical-align: middle;
+}
+
+.panel-toolbar-button-small-down
+{
+	vertical-align: middle;
+}
+
+.panel-toolbar-button-small-hover
+{
+	vertical-align: middle;
+}
+
+.frame-toolbar-button
+{
+	vertical-align: middle;
+}
+
+.frame-toolbar-button-hover
+{
+	vertical-align: middle;
+}
+
+.frame-toolbar-button-down
+{
+	vertical-align: middle;
+}
+
+.frame-toolbar-button-small
+{
+	vertical-align: middle;
+}
+
+.frame-toolbar-button-small-hover
+{
+	vertical-align: middle;
+}
+
+.frame-toolbar-button-small-down
+{
+	vertical-align: middle;
+}
+
+.toolbar-command
+{
+  vertical-align: baseline;
+}
+
+.toolbar-command-hl
+{
+  vertical-align: baseline;
+}
+
+.toolbar-command-showcaption-hl
+{
+  vertical-align: baseline;
+}
+
+.toolbar-command-showcaption
+{
+  vertical-align: baseline;
+}
+
+.toolbar-image
+{
+  vertical-align: middle;
+}
+
+.frame-toolbar-caption
+{
+	line-height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.panel-status-qbe
+{
+  line-height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.panel-status-data
+{
+	line-height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.panel-status-updated
+{
+  line-height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.book-toolbar-status
+{
+  vertical-align: middle;
+}
+
+.frame-toolbarsmall-caption
+{
+  vertical-align: middle;
+}
+
+.panel-statussmall-qbe
+{
+  vertical-align: middle;
+}
+
+.panel-statussmall-data
+{
+  vertical-align: middle;
+}
+
+.panel-statussmall-updated
+{
+  vertical-align: middle;
+}
+
+.book-toolbarsmall-status
+{
+  vertical-align: middle;
+}
+
+.toolbar-frame-container-small
+{
+  vertical-align: -1px;
+}
+
+.popup-cell-text
+{
+	padding: 5px;
+}
+
+.taskbar-toolbar-command
+{
+  vertical-align: -4px;
+}
+
+.taskbar-form-list-caption
+{
+  vertical-align: top;
+}
+
+.panel-toolbarsmall-qbetip
+{
+  vertical-align: -4px;
+}
+
+.toolbar-frame-container
+{
+  vertical-align: -1px;
+}
+
+.toolbar-form-container
+{
+  vertical-align: -4px;
+}
+
+.toolbar-button
+{
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.toolbar-main-button
+{
+  vertical-align: -1px;
+}
+
+/* Correzioni necessarie per Firefox 21*/
+.book-span-combo
+{
+  height: auto !important;
+  margin-top: 2px;
+}
+
+/* ***************************************** */
+.panel-value-textarea
+{
+  white-space: pre-wrap;
+}
+/* ******************************************/

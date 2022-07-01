@@ -1,0 +1,26 @@
+.omissis {
+    color:red;
+	font-size: 10pt;
+	text-decoration: line-through;
+}
+
+.giustifica {
+    text-align: justify;
+}
+
+.giustificadefoult {
+    text-align: justify;
+}
+
+s
+{
+    color:red;
+	font-size: 10pt;
+}
+
+body
+{
+  text-align:justify;
+  font-family:Arial;
+  font-size: 12px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE web-app 
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <display-name>Procton</display-name>
+
+    <description>Procton Project</description>
+
+    <context-param>
+    	<param-name>myparam</param-name>
+    	<param-value>my value</param-value>
+    </context-param>
+    
+    <context-param>
+    	<param-name>receiveSignedFilesDir</param-name>
+    	<param-value>signedTemp</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>Procton</servlet-name>
+        <servlet-class>IDServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Procton</servlet-name>
+        <url-pattern>/Procton.htm</url-pattern>
+    </servlet-mapping>
+
+    <!-- Intra-app comunication section -->
+    <servlet>
+        <servlet-name>C_Procton</servlet-name>
+        <servlet-class>IDServletCOM</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>C_Procton</servlet-name>
+        <url-pattern>/C_Procton.htm</url-pattern>
+    </servlet-mapping>
+   
+    <servlet>
+        <servlet-name>ReceiveSignedFile</servlet-name>
+        <servlet-class>proctonservlets.ReceiveSignedFile</servlet-class>
+    </servlet>   
+    
+    <servlet-mapping>
+        <servlet-name>ReceiveSignedFile</servlet-name>
+        <url-pattern>/ReceiveSignedFile</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DownloadFile</servlet-name>
+        <url-pattern>/DownloadFile</url-pattern>
+    </servlet-mapping>
+
+    <!-- End Intra-app comunication section -->
+
+    
+    <listener>
+      <listener-class>IDSessionListener</listener-class>
+    </listener>
+    
+    <listener>
+      <listener-class>IDContextListener</listener-class>
+    </listener>
+</web-app>

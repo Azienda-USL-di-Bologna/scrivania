@@ -1,0 +1,5915 @@
+/* ************************************************
+// Instant Developer RD3 Framework
+// (c) 1999-2009 Pro Gamma Srl - All rights reserved
+//
+// Foglio di stile per gli elementi RD3
+// ************************************************/
+
+/* Elemento HTML */
+html
+{
+  overflow: hidden;
+  border: none;
+}
+
+/* Elemento BODY */
+BODY
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	background-color: #DFE8F6;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	border: none;
+}
+
+DIV
+{
+	-moz-user-select: -moz-none;
+	cursor: default;
+}
+
+SPAN
+{
+	-moz-user-select: none;
+	cursor: default;
+}
+
+IMG
+{
+	-moz-user-select: none;
+	cursor: default;
+}
+
+/* Elemento DIV che contiene l'intero oggetto WebEntryPoint */
+#wep 
+{
+  height : 100%;
+  width  : 100%;
+  overflow: hidden;
+  border: 0px solid red;
+  background-color: #eeeff2;
+}
+
+/* Elemento DIV che contiene i menu posti sulla sinistra e la lista delle videate */
+#side-menu-container
+{
+  overflow: hidden;
+  padding: 5px;
+  padding-right: 0px;
+  background-color: transparent;
+}
+
+/* Classe aggiunta per side bar a destra */
+.side-menu-right
+{
+  padding-left: 0px !important;
+  padding-right: 5px !important;
+  float:right;
+}
+
+/* Classe aggiunta per menu bar in alto */
+.side-menu-upbar
+{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  height: 21px;
+}
+
+/* Classe aggiunta per menu bar in basso */
+.side-menu-taskbar
+{
+  padding: 0px !important;
+  height: 30px;
+  position: absolute;
+  z-index: 10; 
+}
+
+/* Elementi della Task bar */
+#taskbar-table
+{
+	border-collapse: collapse;
+  width: 100%;
+  padding: 1px;
+}
+
+#taskbar-trow
+{
+	background-image: url('images/applhdr.gif');
+	background-repeat: repeat-x;
+	background-color: #DEE7F6;
+	border-bottom: 1px solid #99bbe8;
+	height : 30px;
+}
+
+#taskbar-start-cell
+{
+	background-image: url('images/start.gif');
+	background-repeat: no-repeat;
+	width: 95px;
+	cursor: pointer;
+}
+
+#taskbar-start-cell:hover
+{
+	background-position: 0px -30px;
+}
+
+#taskbar-quick-cell
+{
+	width: 1px;
+	white-space: nowrap;
+}
+
+#taskbar-formlist-cell
+{
+}
+
+#taskbar-tray-cell
+{
+	width: 1px;
+	white-space: nowrap;
+	padding-right: 8px;
+}
+
+#taskbar-menu-box
+{
+	position: absolute;
+	overflow: hidden;
+	width: 200px;
+	height: 300px;
+	left: 0px;
+	border: 2px solid #35537e;
+	display: none;
+	background-color: #dee7f6;
+	z-index: 10;
+}
+
+/* Elemento DIV che contiene il testo iniziale */
+#wait-box
+{
+	position: relative;
+	margin: 160px auto;
+	border: 1px solid #6899BB;
+	background-color: white;
+	width: 244px;
+	height: 36px;
+}
+
+/* IMG Immagine nel testo iniziale */
+#wait-box-image
+{	
+	position: absolute;
+	padding: 2px;
+}
+
+/* DIV del testo iniziale */
+#wait-box-text
+{
+	position: absolute;
+	left: 38px;
+	top: 4px;
+	font-size: 10pt;
+	width: 200px;
+}
+
+/* DIV Progress bar caricamento immagini */
+#wait-box-progress
+{
+	position: absolute;
+	left: 38px;
+	top: 24px;
+	background-color: #6899BB;
+	height: 4px;
+	width: 200px;
+	font-size: 0px;
+}
+
+.wait-box-error
+{
+	font-size: 14pt !important;
+	color: black !important;
+	padding: 4px !important;
+	text-shadow: none !important;
+	text-align: center !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0px !important;
+	position: absolute !important;
+	border: none !important;
+}
+
+/* Elemento DIV che contiene la status bar */
+#status-bar-container
+{
+	background-color: transparent;
+	position: absolute;
+	height: 23px;
+	width: 300px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	white-space: nowrap;
+}
+
+#taskbar-status-container
+{
+  display: inline-block;
+  height: 20px;
+  vertical-align: top;
+  margin-right: 2px;
+  margin-left: 2px;
+  padding-top: 1px;
+  white-space: nowrap;
+}
+
+/* Elemento DIV utilizzato per fuocare i campi */
+#focus-box 
+{
+  border: 1px solid red;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Elemento DIV che contiene la status bar quando non deve essere mostrata*/
+.status-bar-invisible
+{
+  height: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+	font-size: 0px;
+}
+
+/* Elemento DIV che contiene la toolbar */
+#toolbar-container
+{
+	background-color: transparent;
+	position: absolute;
+	height: 23px;
+	width: 300px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#taskbar-toolbar-container
+{
+	background-color: transparent;
+	height: 23px;
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
+}
+
+/* Elemento DIV che contiene la toolbar globale quando non deve essere vista*/
+.toolbar-container-invisible
+{
+  height: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+	font-size: 0px;
+}
+
+/* Elemento DIV che contiene lo spazio per le forms */
+#forms-container
+{
+	position: absolute;
+	overflow: hidden;
+	padding: 5px;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+}
+
+/* Elemento DIV che contiene la form agganciata a sinistra */
+#left-dock-container
+{
+	position: absolute;
+	width : 0px;
+}
+
+/* Elemento DIV che contiene la form agganciata sopra */
+#top-dock-container
+{
+	position: absolute;
+	height : 0px;
+	font-size: 0px;
+}
+
+/* Elemento DIV che contiene la form agganciata a destra */
+#right-dock-container
+{
+	position: absolute;
+	width : 0px;
+}
+
+/* Elemento DIV che contiene la form agganciata in basso */
+#bottom-dock-container
+{
+	position: absolute;
+	height : 0px;
+	font-size: 0px;
+}
+
+/* Classe della form agganciata a sinistra */
+.left-dock-container-visible
+{
+	position: absolute;
+	overflow: hidden;
+	padding: 5px;
+	padding-right: 0px;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+}
+
+/* Classe della form agganciata sopra */
+.top-dock-container-visible
+{
+	position: absolute;
+	overflow: hidden;
+	padding: 5px;
+	padding-bottom: 0px;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+}
+
+/* Classe della form agganciata a destra */
+.right-dock-container-visible
+{
+	position: absolute;
+	overflow: hidden;
+	padding: 5px;
+	padding-left: 0px;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+}
+
+/* Classe della form agganciata in basso */
+.bottom-dock-container-visible
+{
+	position: absolute;
+	overflow: hidden;
+	padding: 5px;
+	padding-top: 0px;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+}
+
+.left-dock-container-visible .zone-tab-view, .right-dock-container-visible .zone-tab-view, .top-dock-container-visible .zone-tab-view
+{
+  margin-top: 0px !important;
+}
+
+.dock-container-unpinned
+{
+  /*padding-top : 3px;
+  padding-bottom : 3px;*/
+  margin: 5px;
+  border: 1px solid #99bbe8;
+  background-color: #eeeff2 !important;
+}
+
+.dock-frame-unpinned
+{
+  background-color: #eeeff2 !important;
+}
+
+/* Elemento IFRAME che contiene la pagina di benvenuto */
+#welcome-container
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border: 1px solid #99bbe8;
+}
+
+/* Elemento DIV che contiene i menu posti sulla sinistra */
+#menu-container
+{
+	vertical-align: top;
+	background-color: #dee7f6;
+	padding-bottom: 8px;
+	border-left: 1px solid #99bbe8;
+	border-right: 1px solid #99bbe8;
+	border-top: 1px solid #99bbe8;
+}
+
+.menu-container-upbar
+{
+	width: 100% !important;
+	border: none !important;
+	background-image: url('images/frmcaptionbg.gif');
+	background-position: 0px -2px;
+	font-size: 13px;
+	padding: 4px !important;
+}
+
+/* Elemento DIV superiore che serve per effettuare lo scrolling del menu laterale */
+.menu-scrollbox-up
+{
+  height: 15px;
+	background-color: #6899BB;
+	position: absolute;
+	display: none;
+	opacity: 0.7;
+  filter: alpha(opacity = 70);
+  background-image: url('images/scrup.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 10;
+}
+
+/* Elemento DIV inferiore che serve per effettuare lo scrolling del menu laterale */
+.menu-scrollbox-dn
+{
+  height: 15px;
+	background-color: #6899BB;
+	position: absolute;
+	display: none;
+	opacity: 0.7;
+  filter: alpha(opacity = 70);
+  background-image: url('images/scrdn.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 10;
+}
+
+/* Elemento DIV che contiene la lista delle form aperte */
+#form-list-container
+{
+	background-color: #dee7f6;
+	border-left: 1px solid #99bbe8;
+	border-right: 1px solid #99bbe8;
+	border-bottom: 1px solid #99bbe8;
+}
+
+/* Classe applicata ai DIV che contengono i PDF da stampare */
+.pdf-object
+{
+	width: 1px;
+	height: 1px;
+	border: 0px solid white;
+	background-color: transparent;
+	position: absolute;
+	overflow: hidden;
+	left: 3000px;
+	top: 3000px;
+}
+
+/* Classe applicata al DIV che invia messaggi alla traylet */
+#traylet-frame
+{
+	width: 1px;
+	height: 1px;
+	border: 0px solid white;
+	background-color: transparent;
+	position: absolute;
+	overflow: hidden;
+	left: 3200px;
+	top: 3200px;
+}
+
+/* Elemento DIV utilizzato per effettuare resize degli oggetti */
+#resize-object
+{
+	position: absolute;
+	background-color: transparent;
+	border: 2px dotted blue;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Elemento DIV utilizzato per evidenziare l'oggetto drag */
+#drag-object
+{
+	position: absolute;
+	background-color: gray;
+	opacity: 0.3;
+  filter: alpha(opacity = 30);
+	border: 1px solid black;
+	padding: 0px;
+	margin: 0px;
+	z-index: 100;
+}
+
+/* Elemento DIV utilizzato per evidenziare un drop target */
+#drop-target
+{
+	position: absolute;
+	background-color: transparent;
+	border: 2px solid red;
+	padding: 0px;
+	margin: 0px;
+	z-index: 100;
+}
+
+/* **********************************************************/
+/* Classe applicata al titolo della lista delle Form Aperte */
+/* **********************************************************/
+.form-list-header
+{
+  width: 100%;
+	text-align: left;
+	text-indent: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #0E4D79;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+
+/* ******************************************************/
+/* Elemento DIV che contiene gli elementi della lista   */
+/* delle form aperte                                    */
+/* ******************************************************/
+.form-list-entry-container
+{
+  width: 100%;
+	background-color: #dee7f6;
+}
+
+/* ************************************************************/
+/* Classe applicata alla riga in cui viene disegnato il       */
+/* pulsante chiudi tutto                                      */
+/* ************************************************************/
+.form-list-close-all-box
+{
+  width: 100%;
+	text-align: right;
+	padding-top: 8px;
+}
+
+.form-list-close-all-box-right
+{
+	text-align: left;
+}
+
+
+/* ************************************************************/
+/* Classe applicata al pulsante chiudi tutto                  */
+/* (NON EVIDENZIATO)                                          */
+/* ************************************************************/
+.form-list-close-all-button
+{
+  cursor: pointer;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 20px;
+	color: #0E4D79;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+.form-list-close-all-button-right
+{
+	margin-right: 0px;
+	margin-left: 16px;
+}
+
+
+/* ************************************************************/
+/* Classe applicata al pulsante chiudi tutto                  */
+/* (EVIDENZIATO)                                              */
+/* ************************************************************/
+.form-list-close-all-button-hl
+{
+  cursor: pointer;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 20px;
+	color: #0E4D79;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+/* ************************************************************/
+/* Classe applicata all'immagine del pulsante chiudi tutto    */
+/* ************************************************************/
+.form-list-close-all-img
+{
+	display: inline;
+	vertical-align: bottom;
+	cursor: pointer;
+	background-image: url(images/clall-bg.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.form-list-close-all-img-hover
+{
+	display: inline;
+	vertical-align: bottom;
+	cursor: pointer;
+	background-image: url(images/clall-bg.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -28px;
+}
+
+.form-list-close-all-img-down
+{
+	display: inline;
+	vertical-align: bottom;
+	cursor: pointer;
+	background-image: url(images/clall-bg.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -56px;
+}
+
+
+/* ************************************************************/
+/* Classe applicata al testo del pulsante chiudi tutto        */
+/* ************************************************************/
+.form-list-close-all-text
+{
+  padding-left: 4px;
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per il popup menu                      */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* classe per i DIV che contengono l'intero menù   */
+/* *************************************************/
+.popup-menu-container 
+{
+  background-color: white;
+  border: 1px solid #99bbe8;
+  margin: 0px;
+	padding: 0px;
+  position: absolute;
+  width: 160px;
+}
+
+.popup-menu-table
+{
+	border-collapse: collapse;
+  width: 100%;
+  padding: 1px;
+}
+
+.popup-menu-hover
+{
+	background-color: #dee7f6;
+}
+
+/* *************************************************/
+/* classe per la TR che contiene una linea del     */
+/* menu popup     																 */
+/* *************************************************/
+.popup-menu-item 
+{
+	cursor: pointer;
+}
+
+/* *************************************************/
+/* classe per la TD/IMG che contiene l'icona di una*/
+/* riga del menu popup     												 */
+/* *************************************************/
+.popup-cell-icon 
+{
+	background-color: #dee7f6;
+	padding: 2px;
+	width: 20px;
+	height: 1px;
+	font-size: 1pt;
+	cursor: pointer;
+}
+
+.popup-menu-image
+{
+	vertical-align: middle;
+}
+
+/* *************************************************/
+/* classe per la TD/SPAN che contiene il testo di  */
+/* una riga del menu popup     										 */
+/* *************************************************/
+.popup-cell-text
+{
+	height: 18px;
+	color: black;
+	font-size: 8pt;
+	padding: 2px;
+	padding-left: 5px;
+	width:100%;
+	cursor: pointer;
+}
+
+.popup-cell-text-sep
+{
+	width: 100%;
+	height: 5px;
+	padding: 2px;
+	font-size: 1pt;
+	background-image: url('images/phr.gif');
+	background-position: center right;
+	background-repeat: repeat-x;
+}
+
+.popup-menu-text
+{
+	cursor: pointer;
+}
+
+.popup-menu-text-sep
+{
+}
+
+.popup-menu-popup
+{
+	background-image: url('images/rs.gif');
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+/* *************************************************/
+/* classe per il testo del menu popup (disab.)     */
+/* *************************************************/
+.popup-menu-disabled
+{
+	color: gray;
+	cursor: default;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per l'header dell'applicazione         */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Elemento DIV che contiene l'header              */
+/* *************************************************/
+#header-container 
+{
+	height : 30px;
+  width  : 100%;
+	color: white;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 14pt;
+	background-image: url('images/applhdr.gif');
+	background-repeat: repeat-x;
+	background-color: #DEE7F6;
+	border-bottom: 1px solid #99bbe8;
+	overflow: hidden;
+}
+
+/* *************************************************/
+/* immagine per chiudere o aprire il menù          */
+/* *************************************************/
+#header-suppress-menu
+{
+	cursor: pointer;
+	padding-left: 5px;
+	margin-bottom: 1px;
+	vertical-align: -2px;
+}
+
+.header-suppress-menu-hl-right
+{
+	padding-left: 0px !important;
+	padding-right: 8px !important;
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.header-suppress-menu-hl
+{
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 0px;
+}
+
+.header-suppress-menu-hover
+{
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 5px -15px;
+}
+
+.header-suppress-menu-hover-right
+{
+	padding-left: 0px !important;
+	padding-right: 8px !important;
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -15px;
+}
+
+.header-suppress-menu-down
+{
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 5px -30px;
+}
+
+.header-suppress-menu-down-right
+{
+	padding-left: 0px !important;
+	padding-right: 8px !important;
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -30px;
+}
+
+/* *************************************************/
+/* immagine logo dell'applicazione                 */
+/* *************************************************/
+#header-main-image
+{
+	vertical-align: -2px;
+	margin-left : 8px;
+}
+
+/* *************************************************/
+/* titolo dell'applicazione                        */
+/* *************************************************/
+#header-main-caption
+{
+	margin-left : 8px;
+	line-height: 30px;
+	display: inline-block;
+}
+
+/* *************************************************/
+/* span usato per separare gli elementi dell'header*/
+/* *************************************************/
+#header-divider
+{
+  vertical-align: -2px;
+}
+
+/* *************************************************/
+/* Icona di comunicazione ajax in corso            */
+/* *************************************************/
+#header-ajax-indicator
+{
+	vertical-align: -1px;
+	margin-right: 8px;
+}
+
+/* *************************************************/
+/* casella command nell'header                     */
+/* *************************************************/
+#header-command-box
+{
+	font-size: 8pt;
+	font-weight: normal;
+	padding-bottom: 1px;
+	border-bottom: 1px dotted white;
+	display: inline-block;
+	margin-right: 16px;
+	height: 22px;
+	margin-bottom: 2px;
+	line-height: 24px;
+	vertical-align: 4px;
+}
+
+/* *************************************************/
+/* input box del comando nell'header               */
+/* *************************************************/
+#header-command-input
+{
+	margin-right: 0px;
+	font-size: 8pt;
+	text-transform: uppercase;
+	width: 60px;
+	color: #8b0000;
+}
+
+/* *************************************************/
+/* bottone debug/trace nell'header                 */
+/* *************************************************/
+#header-debug-image
+{
+	vertical-align: -1px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.header-debug-image-hl
+{
+  background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.header-debug-image-hover
+{
+  background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px -15px;
+}
+
+.header-debug-image-down
+{
+  background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px -30px;
+}
+
+/* *************************************************/
+/* bottone help nell'header                        */
+/* *************************************************/
+#header-help-button
+{
+	vertical-align: -1px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.header-help-button-hl
+{
+	background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.header-help-button-hover
+{
+	background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px -15px;
+}
+
+.header-help-button-down
+{
+	background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px -30px;
+}
+
+/* *************************************************/
+/* bottone chiudi applicazione nell'header         */
+/* *************************************************/
+#header-close-app
+{
+	vertical-align: -1px;
+	cursor: pointer;
+}
+
+.header-close-app-hl
+{
+	background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.header-close-app-hover
+{
+	background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px -15px;
+}
+
+.header-close-app-down
+{
+	background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 0px -30px;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile del menù a tendina        */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata ai comandi della barra         */
+/* *************************************************/
+.menu-bar-command
+{
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+
+.menu-bar-hover
+{
+  border: 1px solid #99bbe8;
+  background-color: white;
+}
+
+.menu-bar-disabled
+{
+  color: gray;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile del menù laterale         */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata ai contenitori dei command set */
+/* ogni container contiene l'intero command set    */
+/* o command di qualunque livello                  */
+/* *************************************************/
+.menu-container-level-1
+{
+  font-size: 0px;
+}
+
+.menu-container-level-2
+{
+  font-size: 0px;
+}
+
+.menu-container-level-3
+{
+  font-size: 0px;
+	padding-left: 6px;
+}
+
+.menu-container-level-4
+{
+  font-size: 0px;
+	padding-left: 12px;
+}
+
+
+/* *************************************************/
+/* Il submenu-container è il DIV che contiene i    */
+/* comandi figli di questo command set (solo per   */
+/* essi)                                           */
+/* *************************************************/
+.submenu-container-level-1
+{
+  background-color: white;
+  border-bottom: 1px solid #99bbe8;
+}
+
+.submenu-container-level-2
+{
+  background-color: white;
+}
+
+.submenu-container-level-3
+{
+  background-color: white;
+}
+
+.submenu-container-level-4
+{
+  background-color: white;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta la testata del        */
+/* command set (l'oggetto stesso)                  */
+/* *************************************************/
+.menu-commandset-level-1
+{
+  background-image: url(images/cmdslev1bg.gif);
+  height: 21px;
+  border-bottom: 1px solid #99bbe8;
+  color: #004d89;
+  padding-left: 2px;
+  white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu-commandset-level-2
+{
+  color: #004d89;
+  white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu-commandset-level-3
+{
+  color: #004d89;
+  white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+	margin-top: -3px;
+	margin-left: 4px;
+}
+
+.menu-commandset-level-4
+{
+  color: #004d89;
+  white-space: nowrap;
+	overflow: hidden;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta la testata del        */
+/* command (l'oggetto stesso)                      */
+/* *************************************************/
+.menu-command-level-1
+{
+	padding: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu-command-level-2
+{
+	padding: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.taskbar-command-level-2
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.taskbar-command-level-2 A
+{
+	color: black !important;
+}
+
+.menu-command-level-3
+{
+	height: 20px;
+	padding: 0px;
+	margin-top: -2px;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu-command-level-4
+{
+	height: 20px;
+	padding: 0px;
+	margin-top: -2px;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta la testata del        */
+/* command set (EVIDENZIATA)                       */
+/* (le classi con -hover sono necessarie per IE6)  */
+/* *************************************************/
+.menu-commandset-level-1:hover
+{
+  background-image: url(images/cmdslev1bg_hl.gif);
+  border-bottom: 1px solid #FF9900;
+}
+.menu-commandset-level-1-hover
+{
+  background-image: url(images/cmdslev1bg_hl.gif);
+  border-bottom: 1px solid #FF9900;
+}
+
+.menu-commandset-level-2:hover
+{
+	background-color: #EEEEEE;
+}
+.menu-commandset-level-2-hover
+{
+	background-color: #EEEEEE;
+}
+
+.menu-commandset-level-3:hover
+{
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+.menu-commandset-level-3-hover
+{
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.menu-commandset-level-4:hover
+{
+	background-color: #EEEEEE;
+}
+.menu-commandset-level-4-hover
+{
+	background-color: #EEEEEE;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta la testata del        */
+/* command (EVIDENZIATA)                           */
+/* (le classi con -hover sono necessarie per IE6)  */
+/* *************************************************/
+.menu-command-level-1:hover
+{
+	background-color: #0E4D79;
+}
+.menu-command-level-1-hover
+{
+	background-color: #0E4D79;
+}
+
+.menu-command-level-2:hover
+{
+	background-color: #EEEEEE;
+}
+.menu-command-level-2-hover
+{
+	background-color: #EEEEEE;
+}
+
+.menu-command-level-3:hover
+{	
+	background-color: #EEEEEE;
+}
+.menu-command-level-3-hover
+{	
+	background-color: #EEEEEE;
+}
+
+.menu-command-level-4:hover
+{
+	background-color: #EEEEEE;
+}
+.menu-command-level-4-hover
+{
+	background-color: #EEEEEE;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta il link interno       */
+/* alla testata del command set                    */
+/* *************************************************/
+.menu-commandset-link-level-1
+{
+	color: #004d89;
+	font-weight: bold;
+	font-size: 8pt;
+  cursor: pointer;
+  line-height: 20px;
+  padding-left: 4px;
+}
+
+.menu-commandset-link-level-2
+{
+	color: #004d89;
+	font-weight: bold;
+	font-size: 8pt;
+	cursor: pointer;
+	line-height: 20px;
+	padding-left: 4px;
+	vertical-align: 1px;
+}
+
+.menu-commandset-link-level-3
+{
+	color: #004d89;
+	font-weight: bold;
+	font-size: 8pt;
+	cursor: pointer;
+	line-height: 20px;
+	padding-left: 4px;
+	vertical-align: 1px;
+}
+
+.menu-commandset-link-level-4
+{
+	color: #004d89;
+	font-weight: bold;
+	font-size: 8pt;
+	cursor: pointer;
+	line-height: 20px;
+	padding-left: 4px;
+	vertical-align: 1px;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta il link interno       */
+/* alla testata del command                        */
+/* *************************************************/
+.menu-command-link-level-1
+{
+	color: #004d89;
+	font-size: 8pt;
+	cursor: pointer;
+}
+
+.menu-command-link-level-2
+{
+	color: #004d89;
+	font-size: 8pt;
+	cursor: pointer;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: 2px;
+}
+
+.menu-command-link-level-3
+{	
+	color: #004d89;
+	font-size: 8pt;
+	cursor: pointer;
+	vertical-align: 1px;
+}
+
+.menu-command-link-level-4
+{
+	color: #004d89;
+	font-size: 8pt;
+	cursor: pointer;
+	vertical-align: 2px;
+}
+
+
+/* *************************************************/
+/* Questa classe rappresenta il link interno       */
+/* al menu disabilitato                            */
+/* *************************************************/
+.menu-item-disabled
+{
+	cursor: default !important;
+}
+
+.menu-item-disabled A
+{
+	color: gray !important;
+	cursor: default !important;
+}
+
+.menu-item-disabled:hover
+{
+	background-color: white !important;
+}
+
+
+/* *************************************************/
+/* Questa classe è associata all'immagine          */
+/* all'interno del link di un command set          */
+/* *************************************************/
+.menu-commandset-image-level-1
+{
+  display: none;
+	vertical-align: -3px;
+}
+
+.menu-commandset-image-level-2
+{
+	padding-left: 2px;
+	vertical-align: -3px;
+}
+
+.menu-commandset-image-level-3
+{
+	padding-left: 4px;
+	vertical-align: -3px;
+  background-image: url(images/cmdmlev3end.gif);
+  background-repeat: no-repeat;
+  background-position: -4px 0px;
+}
+
+.menu-commandset-image-level-4
+{
+	padding-left: 4px;
+	vertical-align: -3px;
+}
+
+/* *************************************************/
+/* Questa classe è associata all'immagine          */
+/* a destra del link di un command set             */
+/* *************************************************/
+.menu-commandset-imagedx-level-1
+{
+	vertical-align: -3px;
+	cursor: pointer;
+}
+
+.menu-commandset-imagedx-level-2
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+.menu-commandset-imagedx-level-3
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+.menu-commandset-imagedx-level-4
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+/* *************************************************/
+/* Questa classe è associata all'immagine          */
+/* all'interno del link di un command              */
+/* *************************************************/
+.menu-command-image-level-1
+{
+	padding-right: 4px;
+	vertical-align: -3px;
+}
+
+.menu-command-image-level-2
+{
+	padding-right: 4px;
+	vertical-align: -3px;
+}
+
+.menu-command-image-level-3
+{
+	padding-right: 4px;
+	vertical-align: -3px;
+}
+
+.menu-command-image-level-4
+{
+	padding-right: 4px;
+	vertical-align: -3px;
+}
+
+/* *************************************************/
+/* Questa classe è associata all'immagine          */
+/* a destra del link di un command                 */
+/* *************************************************/
+.menu-command-imagedx-level-1
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+.menu-command-imagedx-level-2
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+.menu-command-imagedx-level-3
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+.menu-command-imagedx-level-4
+{
+	vertical-align: -3px;
+	display: none !important;
+}
+
+/* *************************************************/
+/* Questa classe è associata all'immagine          */
+/* che rappresenta i rami dell'albero dei comandi  */
+/* *************************************************/
+.menu-command-branchimage-level-1
+{
+  vertical-align: -3px;
+}
+
+.menu-command-branchimage-level-2
+{
+	vertical-align: -3px;
+	padding-left: 3px;
+}
+
+.menu-command-branchimage-level-3
+{
+	vertical-align: -3px;
+}
+
+.menu-command-branchimage-level-4
+{
+	vertical-align: -3px;
+}
+
+/* *************************************************/
+/* Questa classe è associata all'immagine          */
+/* che rappresenta i rami dell'albero dei comandi  */
+/* *************************************************/
+.menu-commandset-branchimage-level-1
+{
+	width: 0px;
+	display: none;
+}
+
+.menu-commandset-branchimage-level-2
+{
+	width: 0px;
+}
+
+.menu-commandset-branchimage-level-3
+{
+	width: 0px;
+}
+
+.menu-commandset-branchimage-level-4
+{
+	width: 0px;
+}
+
+
+/* *************************************************/
+/* Questa classe è associata ai separatori         */
+/* fra i vari command/commandset                   */
+/* *************************************************/
+.menu-separator-level-1
+{
+	height: 2px;
+	font-size: 2px;
+	border-bottom: 1px solid #99bbe8;
+}
+
+.menu-separator-level-2
+{
+	height: 1px;
+	font-size: 2px;
+	background-color: #99bbe8;
+	margin-bottom: 3px;
+}
+
+.menu-separator-level-3
+{
+	height: 1px;
+	font-size: 2px;
+	background-color: #99bbe8;
+	margin-top: -2px;
+	margin-bottom: 4px;
+	margin-left: 7px;
+}
+
+.menu-separator-level-4
+{
+	height: 4px;
+	font-size: 2px;
+}
+
+.menu-separator-first
+{
+	height: 2px;
+	margin: 0px;
+	font-size: 0px;
+	display: none;
+}
+
+.menu-separator-img
+{
+  vertical-align: middle;
+  display: none;
+}
+
+.menu-separator-img-first
+{
+  display: none;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi relative alle ToolBar                  */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata allo span che contiene         */
+/* l'intera toolbar                                */
+/* *************************************************/
+.toolbar-container
+{
+  background-color: #DEE7F6;
+  background-image: url(images/msgbg.gif);
+  border: 1px solid #99bbe8;
+  display: inline-block;
+  height: 20px;
+  vertical-align: top;
+  margin-right: 2px;
+  padding-top: 1px;
+}
+
+/* *************************************************/
+/* Classe applicata allo span che contiene         */
+/* l'intera toolbar quando renderizzata all'interno*/
+/* della caption di una form                       */
+/* *************************************************/
+.toolbar-form-container
+{
+  vertical-align: -6px;
+}
+
+.toolbar-form-image-hl
+{
+  cursor: pointer;
+  padding-left: 4px;
+  vertical-align: middle;
+  background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 4px 0px;
+}
+
+.toolbar-form-image
+{
+  cursor: pointer;
+  padding-left: 4px;
+  vertical-align: middle;
+}
+
+
+/* *************************************************/
+/* Classe applicata allo span che contiene         */
+/* l'intera toolbar quando renderizzata all'interno*/
+/* della caption di un frame                       */
+/* *************************************************/
+.toolbar-frame-container
+{
+  vertical-align: middle;
+}
+.toolbar-frame-container-small
+{
+}
+
+/* ************************************************************/
+/* Classe applicata ad un pulsante della toolbar di pannello  */
+/* ************************************************************/
+.toolbar-frame-image-hl
+{
+	vertical-align: middle;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn.gif);
+	background-repeat: no-repeat;
+}
+
+.toolbar-frame-image
+{
+	vertical-align: middle;
+	cursor: pointer;
+	padding-right: 4px;
+}
+
+.frame-caption-hover
+{
+  background-image: url(images/btnhover.gif);
+	background-repeat: no-repeat;
+}
+
+.frame-caption-press
+{
+  background-image: url(images/btndown.gif);
+	background-repeat: no-repeat;
+}
+
+
+/* ************************************************************/
+/* Classe applicata ad un pulsante della toolbar di pannello  */
+/* ************************************************************/
+.toolbar-frame-image-hl-small
+{
+	vertical-align: bottom;
+	margin-bottom: 2px;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn_sm.gif);
+	background-repeat: no-repeat;
+}
+
+.toolbar-frame-image-small
+{
+	vertical-align: bottom;
+	margin-bottom: 2px;
+	cursor: pointer;
+	padding-right: 4px;
+}
+
+.frame-caption-hover-small
+{
+  background-image: url(images/btnhover_sm.gif);
+	background-repeat: no-repeat;
+}
+
+.frame-caption-press-small
+{
+  background-image: url(images/btndown_sm.gif);
+	background-repeat: no-repeat;
+}
+
+/* *************************************************/
+/* Classe applicata allo span che contiene un      */
+/* intero comando della toolbar                    */
+/* NON EVIDENZIATO                                 */
+/* *************************************************/
+.toolbar-command
+{
+	cursor: pointer;
+	font-size: 8pt;
+  color: black;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.taskbar-toolbar-command
+{
+	cursor: pointer;
+	font-size: 8pt;
+  color: black;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+
+/* *************************************************/
+/* Classe applicata allo span che contiene un      */
+/* intero comando della toolbar e le caption dei   */ 
+/* comandi                                         */
+/* NON EVIDENZIATO                                 */
+/* *************************************************/
+.toolbar-command-showcaption
+{
+  width: 35px;
+	cursor: pointer;
+	font-size: 8pt;
+  color: black;
+  padding: 2px;
+}
+
+
+/* *************************************************/
+/* Classe applicata al comando di una toolbar      */
+/* EVIDENZIATO                                     */
+/* *************************************************/
+.toolbar-command-hl
+{
+	background-color: #0066CC;
+	cursor: pointer;
+	font-size: 8pt;
+  color: white;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+
+
+
+/* *************************************************/
+/* Classe applicata alll'immagine di un comando    */
+/* di toolbar                                      */
+/* *************************************************/
+.toolbar-image
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+}
+.toolbar-image-small
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+/* *************************************************/
+/* Classe applicata alll'immagine di un comando    */
+/* di toolbar con hilight attivo                   */
+/* *************************************************/
+.toolbar-image-hl
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+  background-image: url(images/btn.gif);
+	background-repeat: no-repeat;
+}
+.toolbar-image-hl-small
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+  background-image: url(images/btn_sm.gif);
+	background-repeat: no-repeat;
+}
+
+/* *************************************************/
+/* Classe applicata alll'immagine di un comando    */
+/* di toolbar con hilight attivo (mouse over)      */
+/* *************************************************/
+.toolbar-image-hl-hover
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+  background-image: url(images/btnhover.gif);
+	background-repeat: no-repeat;
+}
+.toolbar-image-hl-hover-small
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+  background-image: url(images/btnhover_sm.gif);
+	background-repeat: no-repeat;
+}
+
+/* *************************************************/
+/* Classe applicata alll'immagine di un comando    */
+/* di toolbar con hilight attivo (mouse down)      */
+/* *************************************************/
+.toolbar-image-hl-down
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+  background-image: url(images/btndown.gif);
+	background-repeat: no-repeat;
+}
+.toolbar-image-hl-down-small
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  cursor: pointer;
+  background-image: url(images/btndown_sm.gif);
+	background-repeat: no-repeat;
+}
+
+/* *************************************************/
+/* Classe applicata all'input di un comando        */
+/* di toolbar quando questo non ha un'immagine     */
+/* *************************************************/
+.toolbar-button
+{
+  vertical-align: middle;
+  margin-right: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+  border: 1px solid #8BA3C3;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F9FDFF,EndColorStr=#CFE1EF);
+}
+
+.toolbar-main-button
+{
+  height: 19px;
+}
+.toolbar-form-button
+{
+  height: 22px;
+}
+.toolbar-frame-button
+{
+  height: 22px;
+}
+.toolbar-frame-button-small
+{
+  height: 18px;
+}
+
+.main-button-hover
+{
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F1F4FF,EndColorStr=#F8FBFD);
+}
+.form-button-hover
+{
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F1F4FF,EndColorStr=#F8FBFD);
+}
+.frame-button-hover
+{
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#F1F4FF,EndColorStr=#F8FBFD);
+}
+
+.main-button-press
+{
+  border: 1px solid #FF9900; 
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#E0ECE8,EndColorStr=#F6F1E6);
+}
+.form-button-press
+{
+  border: 1px solid #FF9900; 
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#E0ECE8,EndColorStr=#F6F1E6);
+}
+.frame-button-press
+{
+  border: 1px solid #FF9900; 
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#E0ECE8,EndColorStr=#F6F1E6);
+}
+
+/* *************************************************/
+/* Classe applicata ad un separatore tra comandi   */
+/* di toolbar                      		             */
+/* *************************************************/
+.toolbar-separator
+{
+  display: inline-block;
+	width: 4px;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle form                */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al contenitore dell'intera		 */
+/* form                                            */
+/* *************************************************/
+.form-container
+{
+	width: 100%;
+	height: 100%;
+	background-color: #FAF9F4;
+	border: 1px solid #99bbe8;
+	text-align: left;
+}
+
+/* *************************************************/
+/* Classe applicata al contenitore dei frames      */
+/* posto sotto la caption della form               */
+/* *************************************************/
+.form-frames-container
+{
+  height:100%;
+  width: 100%;
+  position:absolute;
+  overflow: auto;
+  padding-top: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata al contenitore della caption	 */
+/* della form                                      */
+/* *************************************************/
+.form-caption-container
+{
+  width: 100%;
+	height: 26px;
+	background-color: #dee7f6;
+	background-image: url(images/captionbg.gif);
+	background-repeat: repeat-x;
+	color: #004d89;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 8pt;
+	text-align: left;
+  white-space: nowrap;
+}
+
+/* *************************************************/
+/* Classe aggiunta  al contenitore della caption	 */
+/* della form se in stato INACTIVE                 */
+/* *************************************************/
+.form-caption-inactive
+{
+  opacity: 0.90;
+  filter: alpha(opacity = 90);
+}
+
+/* *************************************************/
+/* il form cover serve per rendere lo stato del 	 */
+/* popup quando inattivo                           */
+/* *************************************************/
+.form-cover-inactive
+{
+  opacity: 0.35;
+  filter: alpha(opacity = 35);
+  display:block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+/* *************************************************/
+/* il form cover serve per rendere lo stato del 	 */
+/* popup quando attivo                             */
+/* *************************************************/
+.form-cover
+{
+  display:none;
+}
+
+/* *************************************************/
+/* Classe applicata ai bottoni presenti sulla   	 */
+/* caption della form                              */
+/* *************************************************/
+.form-caption-image
+{
+  vertical-align: top;
+  cursor: pointer;
+  padding-left: 4px;
+  margin-top: 5px;
+  background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 4px 0px;
+}
+
+.form-caption-modal-image
+{
+  vertical-align: top;
+  cursor: pointer;
+  padding-left: 4px;
+  margin-top: 5px;
+  background-image: url(images/btn_bk.gif);
+  background-repeat: no-repeat;
+  background-position: 4px 0px;
+}
+
+.form-caption-hover
+{
+  background-position: 4px -15px;
+}
+
+.form-caption-press
+{
+  background-position: 4px -30px;
+}
+
+/* *************************************************/
+/* Classe applicata all'icona della caption        */
+/* della form                                      */
+/* *************************************************/
+.form-caption-icon
+{
+  vertical-align: top;
+  padding-left: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* *************************************************/
+/* Classe applicata al testo della caption         */
+/* della form                                      */
+/* *************************************************/
+.form-caption-text
+{
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  padding-left: 4px;
+}
+
+
+/* *************************************************/
+/* Classe applicata al div di una entry nella      */
+/* form list                                       */
+/* *************************************************/
+.form-list-item
+{
+  width: 100%;
+	height: 24px;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+/* *************************************************/
+/* Classe applicata al div della form attiva nella */
+/* form list                                       */
+/* *************************************************/
+.form-list-active-item
+{
+  width: 100%;
+	height: 24px;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine della entry della */
+/* form attiva nella form list                     */
+/* *************************************************/
+.form-list-active-img
+{
+	vertical-align: bottom;
+	display:inline-block;
+	width: 27px;
+	height: 24px;
+	background-image: url(images/selflrd3.gif);
+}
+
+
+/* *************************************************/
+/* Classe applicata all'immagine della entry di una*/
+/* form non attiva nella form list                 */
+/* *************************************************/
+.form-list-img
+{
+	vertical-align: bottom;
+	display:inline-block;
+	width: 27px;
+	height: 24px;
+	background-image: url(images/noflrd3.gif);
+	background-position: 0px 0px;
+}
+
+/* *************************************************/
+/* Classe aggiuntiva applicata se il menù          */
+/* è posizionato a destra                          */
+/* *************************************************/
+.form-list-img-right
+{
+	background-position: 27px 0px;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine della entry di una*/
+/* form non attiva nella form list (EVIDENZIATA)   */
+/* *************************************************/
+.form-list-img-hl
+{
+	vertical-align: bottom;
+	display:inline-block;
+	width: 27px;
+	height: 24px;
+	background-image: url(images/noflrd3.gif);
+	background-position: 0px -24px;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine della entry di una*/
+/* form non attiva nella form list (EVID.-DESTRA)  */
+/* *************************************************/
+.form-list-img-hl-right
+{
+	vertical-align: bottom;
+	display:inline-block;
+	width: 27px;
+	height: 24px;
+	background-image: url(images/noflrd3.gif);
+	background-position: 27px -24px;
+}
+
+/* *************************************************/
+/* Classe applicata al nome della form attiva      */
+/* nella form list                                 */
+/* *************************************************/
+.form-list-active-caption
+{
+  display: inline-block;
+  cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: bottom;
+	background-color: white;
+	font-weight: bold;
+	font-size: 8pt;
+	color: #0E4D79;
+	padding-left: 5px;
+	background-image: url(images/flselitembg.gif);
+}
+
+
+/* *************************************************/
+/* Classe applicata al nome della form attiva      */
+/* nella form list (EVIDENZIATO)                   */
+/* *************************************************/
+.form-list-active-caption-hl
+{
+  display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: bottom;
+	background-color: white;
+	font-weight: bold;
+	font-size: 8pt;
+	color: #0E4D79;
+	padding-left: 5px;
+	background-image: url(images/flselitembg.gif);
+}
+
+
+/* *************************************************/
+/* Classe applicata al nome di una form non attiva */
+/* nella form list                                 */
+/* *************************************************/
+.form-list-caption
+{
+  display: inline-block;
+  cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: bottom;
+	background-color: #9ABED8;
+	color: #0E4D79;
+	font-weight: bold;
+	font-size: 8pt;
+	padding-left: 5px;
+	background-image: url(images/flitembg.gif);
+	background-position: 0px 0px;
+}
+
+
+/* *************************************************/
+/* Classe applicata al nome di una form non attiva */
+/* nella form list (EVIDENZIATO)                   */
+/* *************************************************/
+.form-list-caption-hl
+{
+  display: inline-block;
+  cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: bottom;
+	background-color: #9ABED8;
+	color: #0E4D79;
+	font-weight: bold;
+	font-size: 8pt;
+	padding-left: 5px;
+	background-image: url(images/flitembg.gif);
+	background-position: 0px -24px;
+}
+
+
+/* *************************************************/
+/* Classi Form List Taskbar                        */
+/* *************************************************/
+.taskbar-form-list-item
+{
+	cursor: pointer;
+	border: 1px solid gray;
+	padding: 0px;
+	margin: 2px;
+	display: inline-block;
+	width: 150px;
+	height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: white;
+	vertical-align: top;
+	padding-top: 3px;
+	background-image: url(images/tbfl.gif);
+	background-position: 0px 55px;
+}
+
+.taskbar-form-list-item:hover
+{
+	background-position: 0px 25px;
+}
+
+.taskbar-form-list-img
+{
+	cursor: pointer;
+	vertical-align: -4px;
+	padding: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.taskbar-form-list-caption
+{
+	color: white;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	padding: 2px;
+}
+
+.taskbar-form-list-active
+{
+	background-position: 0px 0px;
+	border: 1px groove gray;
+	font-weight: bold;
+}
+
+.taskbar-form-list-active:hover
+{
+	background-position: 0px 0px;
+}
+
+
+/* *************************************************/
+/* Classe applicata al contenitore dei messaggi  	 */
+/* della form                                      */
+/* *************************************************/
+.form-message-container
+{
+  width: 100%;
+  overflow: auto;
+	background-color: #DEE7F6;
+	background-image: url(images/msgbg.gif);
+	padding: 0px;
+	margin: 0px;
+	font-size: 8pt;
+	text-align: left;
+  border-bottom: 1px solid #99bbe8;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* *************************************************/
+/* Classe applicata al div che contiene un         */
+/* singolo messaggio della form                    */
+/* *************************************************/
+.form-message-div
+{
+  height: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* *************************************************/
+/* Classe applicata al IMG che contiene l'icon     */
+/* di un messaggio della form                      */
+/* *************************************************/
+.form-message-icon
+{
+  vertical-align: middle;
+  padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* *************************************************/
+/* Classe applicata allo SPAN che contiene         */
+/* il testo di un messaggio della form             */
+/* *************************************************/
+.form-message-text
+{
+  vertical-align: middle;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile dei frames                */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al contenitore di un frame     */
+/* che contiene altri frame suddivisi verticalmente*/
+/* *************************************************/
+.frame-container-top
+{
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+}
+
+/* ***************************************************/
+/* Classe applicata al contenitore di un frame       */
+/* che contiene altri frame suddivisi orizzontalmente*/
+/* ***************************************************/
+.frame-container-bottom
+{
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+}
+
+
+/* ***************************************************/
+/* Classe applicata al contenitore di un frame       */
+/* che contiene altri frame suddivisi orizzontalmente*/
+/* ***************************************************/
+.frame-container-left
+{
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+}
+
+
+/* ***************************************************/
+/* Classe applicata al contenitore di un frame       */
+/* che contiene altri frame suddivisi orizzontalmente*/
+/* ***************************************************/
+.frame-container-rigth
+{
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+}
+
+/* ***************************************************/
+/* Classe applicata al contenitore di un frame       */
+/* con bordo orizzontale                             */
+/* ***************************************************/
+.frame-border-top
+{
+  border-top: 1px solid #47648e;
+}
+
+/* ***************************************************/
+/* Classe applicata al contenitore di un frame       */
+/* con bordo verticale                               */
+/* ***************************************************/
+.frame-border-left
+{
+  border-left: 1px solid #47648e;
+}
+
+/* ***************************************************/
+/* Classe applicata al contenitore di un frame       */
+/* che contiene oggetti visuali effettivi            */
+/* ***************************************************/
+.frame-container
+{
+  position: absolute;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+}
+
+/* ***************************************************/
+/* Classe applicata al contenitore della toolbar     */
+/* del frame                                         */
+/* ***************************************************/
+.frame-toolbar-container
+{
+  width: 100%;
+  height: 24px;
+  padding-top: 3px;
+	background-color: #DEE7F6;
+	background-image: url('images/frmcaptionbg.gif');
+	overflow: hidden;
+	border-bottom: 1px solid #aac6ec;
+	white-space: nowrap;
+}
+
+/* ***************************************************/
+/* Classe applicata al contenitore della toolbar     */
+/* del frame in caso di icone piccole                */
+/* ***************************************************/
+.frame-toolbarsmall-container
+{
+  width: 100%;
+  height: 20px;
+  padding-top: 1px;
+	background-color: #DEE7F6;
+	background-image: url('images/frmcaptionbg.gif');
+	overflow: hidden;
+	border-bottom: 1px solid #aac6ec;
+	white-space: nowrap;
+}
+
+/* ***************************************************/
+/* Classi applicata al DIV che appare quando la      */
+/* toolbar ha contenuto scrollabile                  */
+/* ***************************************************/
+.frame-toolbar-scrollbox-dx
+{
+  width: 16px;
+  height: 24px;
+	background-color: #6899BB;
+	position: absolute;
+	top: 2px;
+	display: none;
+	opacity: 0.7;
+  filter: alpha(opacity = 70);
+  background-image: url('images/scrdx.gif');
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+}
+
+.frame-toolbarsmall-scrollbox-dx
+{
+  width: 16px;
+  height: 18px;
+	background-color: #6899BB;
+	position: absolute;
+	top: 2px;
+	display: none;
+	opacity: 0.7;
+  filter: alpha(opacity = 70);
+  background-image: url('images/scrdx.gif');
+  background-repeat: no-repeat;
+  background-position: 4px 2px;
+}
+
+.frame-toolbar-scrollbox-sx
+{
+  width: 16px;
+  height: 24px;
+	background-color: #6899BB;
+	position: absolute;
+	top: 2px;
+	display: none;
+	opacity: 0.7;
+  filter: alpha(opacity = 70);
+  background-image: url('images/scrsx.gif');
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+}
+
+.frame-toolbarsmall-scrollbox-sx
+{
+  width: 16px;
+  height: 18px;
+	background-color: #6899BB;
+	position: absolute;
+	top: 2px;
+	display: none;
+	opacity: 0.7;
+  filter: alpha(opacity = 70);
+  background-image: url('images/scrsx.gif');
+  background-repeat: no-repeat;
+  background-position: 4px 2px;
+}
+
+
+/* ***************************************************/
+/* Classe applicata al contenitore di tutti gli      */
+/* altri oggetti visuali del frame                   */
+/* ***************************************************/
+.frame-content-container
+{
+	background-color: transparent;
+	position: absolute;
+	overflow: auto;
+}
+
+
+/* ******************************************************/
+/* Classe applicata all'immagine del pulsante collapse  */
+/* ******************************************************/
+.frame-toolbar-button
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn.gif);
+	background-repeat: no-repeat;
+}
+
+.frame-toolbar-button-hover
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btnhover.gif);
+	background-repeat: no-repeat;
+}
+
+.frame-toolbar-button-down
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btndown.gif);
+	background-repeat: no-repeat;
+}
+
+.frame-toolbar-button-small
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+.frame-toolbar-button-small-hover
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btnhover_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+.frame-toolbar-button-small-down
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btndown_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+/* ******************************************************/
+/* Classe applicata all'icona del frame                 */
+/* ******************************************************/
+.frame-toolbar-icon
+{
+	vertical-align: middle;
+}
+
+/* ******************************************************/
+/* Classe applicata al testo della caption del frame    */
+/* ******************************************************/
+.frame-toolbar-caption
+{
+  line-height: 22px;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	display: inline-block;
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+/* ******************************************************/
+/* Classe applicata al testo della caption del frame    */
+/* ******************************************************/
+.frame-toolbarsmall-caption
+{
+	height: 20px;
+	line-height: 20px;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	display: inline-block;
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile degli indicatori          */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata alla Box esterna               */
+/*  di un indicatore                               */
+/* *************************************************/
+.indicator-box
+{
+	border: solid #99bbe8 1px;
+	background-color: white;
+	background-image: url(images/msgbg.gif);
+	font-size: 8pt;
+	height: 17px;
+	vertical-align: middle;
+	padding: 1px;
+	margin-right: 2px;
+	display: inline-block;
+	padding-left: 4px;
+	padding-right: 2px;
+	padding-top: 3px;
+	color: black;
+}
+
+.taskbar-indicator-box
+{
+	font-size: 8pt;
+	height: 17px;
+	vertical-align: top;
+	padding: 1px;
+	margin-right: 2px;
+	display: inline-block;
+	padding-left: 4px;
+	padding-right: 2px;
+	padding-top: 2px;
+	color: white;
+	white-space: nowrap;
+}
+
+/* *************************************************/
+/* Classe applicata alla Box esterna               */
+/*  di un indicatore vuoto                         */
+/* *************************************************/
+.indicator-box-empty
+{
+	border: solid transparent 1px;
+	font-size: 8pt;
+	background-color: transparent;
+	height: 13px;
+	vertical-align: middle;
+	padding: 1px;
+	margin-right: 2px;
+	display: inline-block;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+
+/* *************************************************/
+/* Classe applicata all'immagine dell'indicatore   */
+/* (abilitato)                                     */
+/* *************************************************/
+.indicator-image
+{
+  float: left;
+  vertical-align: bottom;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+/* *************************************************/
+/* Classe applicata al testo dell'indicatore       */
+/* quando questo è attivo                          */
+/* *************************************************/
+.indicator-text
+{
+	cursor: pointer;
+}
+
+/* *************************************************/
+/* Classe applicata al testo dell'indicatore       */
+/* quando questo è evidenziato                     */
+/* *************************************************/
+.indicator-text:hover
+{
+	background-color: #004d89;
+	color: white;
+}
+
+/* *************************************************/
+/* Classe applicata all'indicatore quando questo è */
+/* non attivo                                      */
+/* *************************************************/
+.indicator-disabled
+{
+  cursor: default !important;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile degli alberi              */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene tutto      */
+/* l'albero e i suoi figli                         */
+/* *************************************************/
+.tree-container
+{
+  background-color: white;
+  border: 1px solid #C0C0C0;
+  padding-left: 2px;
+  padding-top: 1px;
+  overflow: auto;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene il nodo    */
+/* dell'albero ed i suoi figli                     */
+/* *************************************************/
+.tree-node-container
+{
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene il nodo    */
+/* dell'albero (la riga con l'immagine ed il testo */
+/* *************************************************/
+.tree-node-caption
+{
+  vertical-align: middle;
+	margin-top: -1px; 
+	margin-bottom: 0px;
+  white-space: nowrap;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene il nodo    */
+/* dell'albero (la riga con l'immagine ed il testo */
+/* HILIGHT                                         */
+/* *************************************************/
+.tree-node-caption-hl
+{
+  vertical-align: middle;
+	margin-top: -1px; 
+	margin-bottom: 0px;
+  white-space: nowrap;
+  background-color: #EEEEEE;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene i nodi     */
+/* figli di un nodo dell'albero                    */
+/* *************************************************/
+.tree-node-children
+{
+}
+
+/* *************************************************/
+/* Classe applicata all'IMG all'inizio di ogni     */
+/* nodo figlio per fare le righine verticali dei   */
+/* nodi padri                                      */
+/* *************************************************/
+.tree-node-filler
+{
+  height: 19px;
+	background-image: url(images/t.gif);
+  vertical-align: middle;
+	cursor: pointer;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine di un nodo che può*/
+/* essere espanso                                  */
+/* *************************************************/
+.tree-exp-img
+{
+  vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine di un nodo che non*/
+/* può essere espanso                              */
+/* *************************************************/
+.tree-child-img
+{
+  vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine associata al nodo */
+/* *************************************************/
+.tree-node-img
+{
+  vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata al checkbox di un nodo         */
+/* *************************************************/
+.tree-node-check
+{
+  vertical-align: middle;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 2px;
+  height: 13px;
+  width: 13px;
+}
+
+/* *************************************************/
+/* Classe applicata allo span che contiene il testo*/
+/* con il nome del nodo                            */
+/* *************************************************/
+.tree-node-text
+{
+  vertical-align: middle;
+  font-size: 8pt;
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+  padding-left: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata allo span che contiene il testo*/
+/* con il nome del nodo selezionato                */
+/* *************************************************/
+.tree-selected-node-text
+{
+  color: #004d89;
+  font-size: 8pt;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-left: 2px;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile dei book                  */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene tutto      */
+/* l'albero e i suoi figli                         */
+/* *************************************************/
+.book-container
+{
+  background-color: #e1dfc4;
+  border: 1px solid #C0C0C0;
+  padding: 2px;
+  overflow: auto;
+  position: absolute;
+}
+
+.book-container-noborder
+{
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: auto;
+  position: absolute;
+}
+
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un book                */
+/* (area che contiene) le informazioni di navigazione         */
+/* ************************************************************/
+.book-toolbar-status
+{
+	line-height: 22px;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	display:inline-block;
+}
+
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un book                */
+/* (area che contiene) le informazioni di navigazione         */
+/* ************************************************************/
+.book-toolbarsmall-status
+{
+	height: 20px;
+	line-height: 20px;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	display: inline-block;
+	overflow:hidden;
+}
+
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene una pagina */
+/* del book                                        */
+/* *************************************************/
+.book-page-container
+{
+	border: 1px solid black;
+	background-color: white;
+	position: absolute;	
+}
+
+.book-page-container-fixed
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1;
+}
+
+.book-page-container-fixed-left
+{
+  border-right: 1px dotted gray;
+}
+
+.book-page-container-fixed-top
+{
+  border-bottom: 1px dotted gray;
+}
+
+.book-page-container-noborder
+{
+	border: none;
+	position: absolute;	
+}
+
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene una box    */
+/* del book                                        */
+/* *************************************************/
+.book-box
+{
+	border: 1px solid red;
+	position: absolute;
+	z-index: 0;
+}
+
+
+/* *************************************************/
+/* Classe applicata al IMG che contiene l'immagine */
+/* di sfondo di una box del book                   */
+/* *************************************************/
+.book-box-img
+{
+  z-index: -1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* *************************************************/
+/* Classe applicata al IMG che contiene l'immagine */
+/* di un grafico in una box del book                */
+/* *************************************************/
+.book-box-graph
+{
+  border: 0px solid white;
+}
+
+/* *************************************************/
+/* Classe applicata allo SPAN che contiene uno     */
+/* span di una box del book                        */
+/* *************************************************/
+.book-span
+{  
+}
+
+/* *************************************************/
+/* Classe applicata all'INPUT di tipo testo        */
+/* contenuto in  uno span attivo di una            */
+/* box del book                                    */
+/* *************************************************/
+.book-span-input
+{
+	position: absolute;
+	left: 0px;
+	background-color: transparent;
+	border: none;
+}
+
+.book-span-textarea
+{
+	position: absolute;
+	left: 0px;
+	background-color: transparent;
+	overflow: auto;
+	border: none;
+}
+
+.book-span-calendar
+{
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* *************************************************/
+/* Classe applicata all'INPUT di tipo check        */
+/* contenuto in  uno span attivo di una            */
+/* box del book                                    */
+/* *************************************************/
+.book-span-check
+{
+	background-color: transparent;
+}
+
+/* *************************************************/
+/* Classe applicata all'INPUT di tipo file         */
+/* contenuto in  uno span attivo di una            */
+/* box del book                                    */
+/* *************************************************/
+.book-span-file
+{
+	color: blue !important;
+	text-decoration: underline !important;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+
+/* *************************************************/
+/* Classe applicata all'INPUT di tipo combo        */
+/* contenuto in  uno span attivo di una            */
+/* box del book                                    */
+/* *************************************************/
+.book-span-combo
+{
+}
+
+/* *************************************************/
+/* Classe applicata all'INPUT di tipo radio        */
+/* contenuto in uno span attivo di una             */
+/* box del book                                    */
+/* *************************************************/
+.book-span-radio
+{
+	vertical-align: -4px;
+	height: 19px;
+	background-color: transparent;
+	/* Chrome e Safari hanno i loro default */
+  width: 19px;
+  margin: 0px;
+  padding: 0px;
+}
+.book-span-radio-text
+{
+}
+
+/* *************************************************/
+/* Classe applicata all'IMG contenuta in uno       */
+/* span con immagine di una box del book           */
+/* *************************************************/
+.book-span-img
+{
+  vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata all'INPUT di tipo button       */
+/* contenuto in  uno span attivo di una            */
+/* box del book                                    */
+/* *************************************************/
+.book-span-button
+{
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene una sezione*/
+/* del book                                        */
+/* *************************************************/
+.book-section
+{
+	border: 1px solid green;
+	position: absolute;
+	overflow: hidden;
+}
+
+
+/* ************************************************************/
+/* Classe applicata ad un pulsante della toolbar di book  */
+/* ************************************************************/
+.book-toolbar-button
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn.gif);
+	background-repeat: no-repeat;
+}
+
+.book-toolbar-button-down
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btndown.gif);
+	background-repeat: no-repeat;
+}
+
+.book-toolbar-button-hover
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btnhover.gif);
+	background-repeat: no-repeat;
+}
+
+.book-toolbar-button-small
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+.book-toolbar-button-small-down
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btndown_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+.book-toolbar-button-small-hover
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btnhover_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+/* ****************************************************/
+/* Classe applicata al separatore tra comandi della   */
+/* toolbar del book                                   */
+/* ****************************************************/
+.book-toolbar-sep
+{
+  width: 16px;
+  display: inline-block;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile dei pannelli              */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al box che contiene l'intero   */
+/* pannello in lista                               */
+/* *************************************************/
+.panel-list-container
+{
+	border: none;
+	background-color: transparent;
+	height: 100%;
+  width: 100%;
+	position: absolute;
+	padding: 0px;
+	overflow: hidden;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene la lista   */
+/* nel pannello in lista                           */
+/* *************************************************/
+.panel-list-list-container
+{
+	position: absolute;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+
+/* *************************************************/
+/* Classe applicata al box che contiene la scroll  */
+/* area nel caso di fixed column > 0               */
+/* *************************************************/
+.panel-scroll-area
+{
+	position: absolute;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	padding: 0px;
+	border-left: 1px dotted #c0c0c0;
+	border-right: 1px dotted #c0c0c0;
+	border-top: 1px solid transparent;
+	border-bottom: none;
+}
+
+
+/* *************************************************/
+/* Classe applicata al box che contiene l'intero   */
+/* pannello in form                                */
+/* *************************************************/
+.panel-form-container
+{
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* (area che contiene) le informazioni di navigazione         */
+/* ************************************************************/
+.panel-toolbar-status
+{
+	line-height: 22px;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	display:inline-block;
+}
+
+
+/* ************************************************************/
+/* Classe applicata agli SPAN che contengono i bottoni        */
+/* della toolbar del pannello                                 */
+/* ************************************************************/
+.panel-toolbar-zone
+{
+  height: 26px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+
+/* ************************************************************/
+/* Classe applicata agli SPAN che contengono i bottoni        */
+/* della toolbar del pannello con icone piccole               */
+/* ************************************************************/
+.panel-toolbarsmall-zone
+{
+  height: 26px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+
+/* ************************************************************/
+/* Classe applicata ad un pulsante della toolbar di pannello  */
+/* ************************************************************/
+.panel-toolbar-button
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn.gif);
+	background-repeat: no-repeat;
+}
+
+.panel-toolbar-button-down
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btndown.gif);
+	background-repeat: no-repeat;
+}
+
+.panel-toolbar-button-hover
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btnhover.gif);
+	background-repeat: no-repeat;
+}
+
+.panel-toolbar-button-small
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btn_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+.panel-toolbar-button-small-down
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btndown_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+.panel-toolbar-button-small-hover
+{
+	vertical-align: bottom;
+	cursor: pointer;
+	padding-right: 4px;
+	background-image: url(images/btnhover_sm.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata ad un separatore tra comandi   */
+/* di toolbar di pannello          		             */
+/* *************************************************/
+.panel-toolbar-separator
+{
+  display: inline-block;
+	width: 12px;
+}
+
+/* ************************************************************/
+/* Classe applicata all'immagine dei qbe tip                  */
+/* ************************************************************/
+.panel-toolbar-qbetip
+{
+	vertical-align: middle;
+}
+
+/* ************************************************************/
+/* Classe applicata all'immagine dei qbe tip small            */
+/* ************************************************************/
+.panel-toolbarsmall-qbetip
+{
+	vertical-align: middle;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* se esso è in stato QBE (al posto di panel-toolbar-status)  */
+/* ************************************************************/
+.panel-status-qbe
+{
+  display: inline-block;
+  line-height: 22px;
+	color: green;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	padding-right: 12px;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* se esso è in stato QBE (al posto di panel-toolbar-status)  */
+/* per i pannelli con icone piccole                           */
+/* ************************************************************/
+.panel-statussmall-qbe
+{
+	color: green;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	padding-right: 12px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* se esso è in stato DATA (al posto di panel-toolbar-status)  */
+/* ************************************************************/
+.panel-status-data
+{
+  line-height: 22px;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	padding-right: 12px;
+	display: inline-block;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* se esso è in stato DATA (al posto di panel-toolbar-status) */
+/* per i pannelli con icone piccole                           */
+/* ************************************************************/
+.panel-statussmall-data
+{
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	padding-right: 12px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* se esso è in stato UPD (al posto di panel-toolbar-status)  */
+/* ************************************************************/
+.panel-status-updated
+{
+  display: inline-block;
+  line-height: 22px;
+	color: red;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	padding-right: 12px;
+}
+
+/* ************************************************************/
+/* Classe applicata alla status bar di un pannello            */
+/* se esso è in stato UPD (al posto di panel-toolbar-status)  */
+/* per i pannelli con icone piccole                           */
+/* ************************************************************/
+.panel-statussmall-updated
+{
+	color: red;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow:hidden;
+	padding-right: 12px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+}
+
+/* ************************************************************/
+/* Classe applicata al contenitore dei pulsanti di navigazione*/
+/* del pannello                                               */
+/* ************************************************************/
+.panel-toolbar-navigation
+{
+}
+
+/* ************************************************************/
+/* Classe applicata al DIV usato per evidenziare il record    */
+/* che si sta cancellando                                     */
+/* ************************************************************/
+.panel-highlight-delete
+{
+  position: absolute;
+  border: 2px solid red;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene la caption */
+/* di un campo in form                             */
+/* *************************************************/
+.panel-field-caption-form
+{
+	border: none;
+	position: absolute;
+	overflow: hidden;
+	padding: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene la caption */
+/* di un campo in list                             */
+/* *************************************************/
+.panel-field-caption-list
+{
+	border: none;
+	position: absolute;
+	overflow: hidden;
+	padding: 2px;
+	background-image: url('images/pancapbg.gif');
+	background-repeat: repeat-x;
+	background-position: 0% 100%;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene un campo   */
+/* statico                                         */
+/* *************************************************/
+.panel-field-static
+{
+	border: none;
+	position: absolute;
+	overflow: hidden;
+	padding: 2px;
+	padding-top: 3px;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene tutte le   */
+/* celle di un campo in lista dentro alla lista    */
+/* *************************************************/
+.panel-field-list-box
+{
+	border: none;
+	position: absolute;
+	overflow: hidden;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene tutte le   */
+/* celle di un campo in lista dentro alla lista    */
+/* e che contiene le intestazioni dei gruppi       */
+/* *************************************************/
+.panel-field-grouped-list-box
+{
+	border: none;
+	position: absolute;
+	overflow: visible;
+	z-index: 1;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene il valore  */
+/* di un campo in form                             */
+/* *************************************************/
+.panel-field-value-list
+{
+	border: none;
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 0;
+	left: 0px;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene il valore  */
+/* di un campo in form                             */
+/* *************************************************/
+.panel-field-value-form
+{
+	border: none;
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 0;
+}
+
+/* *************************************************/
+/* Classe applicata al campo che contiene il       */
+/* valore della cella se INPUT                     */
+/* *************************************************/
+.panel-value-input
+{
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	padding: 2px;
+	left: 0px;
+	top: 0px;
+}
+
+/* *************************************************/
+/* Classe applicata ad un INPUT che contiene       */
+/* un WATERMARK                                    */
+/* *************************************************/
+.panel-field-value-watermark
+{
+  color: gray !important;
+}
+
+/* *************************************************/
+/* Classe applicata ad un DIV che contiene         */
+/* CKEditor                                        */
+/* *************************************************/
+.panel-field-value-htmleditor
+{
+  overflow: hidden !important;
+}
+
+/* *************************************************/
+/* Classe applicata all'attivatore del campo       */
+/* *************************************************/
+.panel-value-activator
+{
+	position: absolute;
+	background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* *************************************************/
+/* Classe applicata al campo che contiene il       */
+/* valore della cella se COMBO                     */
+/* *************************************************/
+.panel-value-combo
+{
+	border: none;
+	padding: 2px;
+	position:absolute;
+	background-color: transparent;
+}
+
+/* *************************************************/
+/* Classe applicata all'immagine                   */
+/* della lista valori se COMBO disabilitata        */
+/* *************************************************/
+.panel-value-image
+{
+	border: none;
+	padding: 1px 2px 0px 2px;
+	vertical-align: middle;
+	background-color: transparent;
+}
+
+/* *************************************************/
+/* Classe applicata al testo                       */
+/* della lista valori se COMBO disabilitata        */
+/* *************************************************/
+.panel-value-span
+{
+	border: none;
+	background-color: transparent;
+	padding: 2px 2px 2px 2px;
+}
+
+/* *************************************************/
+/* Classe applicata al testo                       */
+/* della lista valori se COMBO disabilitata        */
+/* *************************************************/
+.panel-value-html
+{
+	border: none;
+	padding: 2px;
+	position: absolute;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+/* *************************************************/
+/* Classe applicata al campo che contiene il       */
+/* valore della cella se INPUT                     */
+/* *************************************************/
+.panel-value-check
+{
+	position:absolute;
+	background-color: transparent;
+}
+
+/* *************************************************/
+/* Classe applicata al campo che contiene il       */
+/* valore della cella se TEXTAREA                  */
+/* *************************************************/
+.panel-value-textarea
+{
+	border: none;
+	overflow: auto;
+	padding: 2px;
+  white-space: pre;
+	background-color: transparent;
+}
+
+/* *************************************************/
+/* Classe applicata al campo che contiene il       */
+/* valore della cella se INPUT/BUTTON              */
+/* *************************************************/
+.panel-value-button
+{
+	position:absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 0;
+}
+
+.panel-value-button[disabled]
+{
+  color: #afa0a0!important;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+/* *************************************************/
+/* Classe applicata al box che contiene la         */
+/* scrollbar dei record del pannello               */
+/* *************************************************/
+.panel-scroll-container
+{
+	border: none;
+	position: absolute;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 18px;
+}
+
+/* *************************************************/
+/* Classe applicata al div che contiene la         */
+/* sottolineatura di errore di un campo di pannello*/
+/* *************************************************/
+.panel-value-error
+{
+	background-image: url('images/soter.gif');
+	position: absolute;
+	height: 5px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+/* *************************************************/
+/* Classe applicata al div che contiene la         */
+/* sottolineatura di warning di un campo           */
+/* *************************************************/
+.panel-value-warning
+{
+	background-image: url('images/sotwa.gif');
+	position: absolute;
+	height: 5px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+/* *************************************************/
+/* Classe applicata al P che contiene              */
+/* il testo di un blob di tipo testo               */
+/* *************************************************/
+.panel-blob-text
+{
+	padding: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata al IMG che contiene l'immagine */
+/* di un blob di tipo immagine                     */
+/* *************************************************/
+.panel-blob-image
+{
+	padding: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata allo SPAN che contiene         */
+/* il link per aprire il blob come zoom            */
+/* *************************************************/
+.panel-blob-span
+{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 2px;
+}
+
+/* *************************************************/
+/* Classe applicata all'IMG dentro ai campi blob   */
+/* *************************************************/
+.panel-blob-span IMG
+{
+	vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata al IFRAME che contiene         */
+/* l'oggetto da mostrare nel caso di blob con      */
+/* file generico                                   */
+/* *************************************************/
+.panel-blob-object
+{
+}
+
+/* **************************************************/
+/* Classe applicata ai bottoni della toolbar        */
+/* del campo se di tipo blob                        */
+/* **************************************************/
+.panel-blob-button
+{
+	position: absolute;
+	cursor: pointer;
+}
+
+/* *************************************************/
+/* Classe applicata al FORM che serve per          */
+/* caricare il contenuto di un blob                */
+/* *************************************************/
+.panel-blob-form
+{
+	padding: 2px;
+}
+
+.panel-blob-form DIV
+{
+	padding: 2px;
+	padding-bottom: 6px;
+}
+
+/* *************************************************/
+/* Classe applicata al box interno  alla scroll    */
+/* container la cui altezza serve per dimensionare */
+/* la scrollbar stessa                             */
+/* *************************************************/
+.panel-scroll-content
+{
+	width: 1px;
+	background-color: transparent;
+}
+
+/* **************************************************/
+/* Classe applicata ai row selector                 */
+/* **************************************************/
+.panel-row-selector
+{
+	position: absolute;
+	cursor: pointer;
+	padding-top: 2px;
+	padding-left: 3px;
+}
+
+
+/* **************************************************/
+/* Classe applicata ai comandi di multiselezione    */
+/* **************************************************/
+.panel-multisel-command
+{
+	position: absolute;
+	cursor: pointer;
+}
+
+
+/* **************************************************/
+/* Classe applicata all'oggetto che rappresenta     */
+/* il tipo di sort sul campo                        */
+/* **************************************************/
+.panel-sort-image
+{
+	position: absolute;
+	cursor: pointer;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle Button Bar          */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al contenitore esterno di una  */
+/* Button Bar che contiene tutti i pulsanti        */
+/* *************************************************/
+.button-bar-container
+{
+}
+
+/* *************************************************/
+/* Classe applicata al contenitore esterno di un   */
+/* pulsante della Button Bar                       */
+/* *************************************************/
+.button-bar-button-box
+{
+	
+}
+
+/* *************************************************/
+/* Classe applicata al pulsante di una Button Bar  */
+/* *************************************************/
+.button-bar-button
+{
+	font-family: tahoma, arial, verdana;
+	font-size: 8pt;
+	height: 24px;
+}
+
+
+/* *************************************************/
+/* Classe applicata ad un separatore tra pulsanti  */
+/* in un layout verticale                          */
+/* *************************************************/
+.button-bar-vertical-separator
+{
+	height: 5px;
+}
+
+
+/* *************************************************/
+/* Classe applicata ad un separatore tra pulsanti  */
+/* in un layout orizzontale                        */
+/* *************************************************/
+.button-bar-horizontal-separator
+{
+	width: 5px;
+}
+
+
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle POPUP               */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene tutta la   */
+/* finestra popup                                  */
+/* *************************************************/
+.popup-frame-container
+{
+	position: absolute;
+	background-color: #FAF9F4;
+	z-index: 0;
+}
+
+/* *************************************************/
+/* se necessario aggiunge i bordi alla finestra    */
+/* popup                                           */
+/* *************************************************/
+.popup-border-thin
+{
+	border: 1px solid #8da5c4;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene la caption */
+/* della finestra popup                            */
+/* *************************************************/
+.popup-frame-caption
+{
+	width: 100%;
+	background-image: url(images/frmcaptionbg.gif);
+	background-repeat: repeat-x;
+	color: #004d89;
+	font-size: 8pt;
+	font-weight: bold;
+	text-indent: 5px;
+	padding: 1px;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #aac6ec;
+	position: absolute;
+}
+
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene il         */
+/* contenuto della finestra popup                  */
+/* *************************************************/
+.popup-frame-content
+{
+  position: absolute;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che copre l'applicazione*/
+/* per attivare la modalità modale                 */
+/* *************************************************/
+.popup-modal-frame
+{
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: #c0c0c0;
+	opacity: 0.3;
+  filter: alpha(opacity = 30);
+  position: absolute;
+  cursor: not-allowed;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle POPUP ERROR         */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene tutta la   */
+/* finestra popup                                  */
+/* *************************************************/
+.popup-error-frame-container
+{
+	border: 2px solid #8B0000;
+	position: absolute;
+	background-color: white;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene la caption */
+/* della finestra popup                            */
+/* *************************************************/
+.popup-error-frame-caption
+{
+	width: 100%;
+	background-color: #8B0000;
+	vertical-align: middle;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 10px;
+	font-size: 10pt;
+}
+
+/* *************************************************/
+/* Classe applicata all'icona della finestra popup */
+/* *************************************************/
+.popup-error-icon
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata al testo della caption         */
+/* della finestra popup                            */
+/* *************************************************/
+.popup-error-caption-text
+{
+	color: #8B0000;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 10px;
+	padding-left: 10px;
+	font-size: 10pt;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene i dettagli */
+/* del messaggio di errore                         */
+/* *************************************************/
+.popup-error-frame-content
+{
+	overflow: auto;
+	background-color: white;
+	border-left: dotted #0E4D79 2px;
+	margin-left: 20px;
+	padding-left: 4px;
+	padding-top: 4px;
+	position: absolute;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene un titolo  */
+/* di una sezione del messaggio di errore          */
+/* *************************************************/
+.popup-error-content-title
+{ 
+	color: #26468F;
+	font-weight: bold;
+	padding: 0px;
+	font-size: 10pt;
+	vertical-align: top;
+	white-space: nowrap;
+	position: absolute;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene il testo   */
+/* di una sezione del messaggio di errore          */
+/* *************************************************/
+.popup-error-content-txt
+{
+  width: 400px;
+  position: absolute;
+	color: #404040;
+	padding: 0px;
+	font-size: 10pt;
+	
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene il         */
+/* pulsante di ritorno all'applicazione            */
+/* *************************************************/
+.popup-error-button
+{
+  position: absolute;
+  color: #26468F;
+	font-weight: bold;
+	font-size: 10pt;
+	cursor: pointer;
+	width: 160px;
+	height: 22px;
+	line-height: 20px;
+	text-align: center;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle MESSAGE BOX         */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *************************************************/
+/* Classe associata ai pulsanti di una MsgBox      */
+/* *************************************************/
+.popup-button
+{
+	width: 70px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+/* ***********************************************************/
+/* Classe associata ai pulsanti opzionali di una MsgBox      */
+/* ***********************************************************/
+.popup-button-opt
+{
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+/* *************************************************/
+/* Classe associata allo Span che contiene il      */
+/* Messaggio                                       */
+/* *************************************************/
+.popup-text
+{
+  position: absolute;
+	display: inline-block;
+	padding-right: 20px;
+	padding-top: 10px;
+	text-align: left;
+	font-size: 10pt;
+}
+
+/* *************************************************/
+/* Classe associata al div che contiene i bottoni  */
+/* *************************************************/
+.popup-input-div
+{
+	position: absolute;
+  padding-top: 5px;
+	width: auto;
+	text-align: center;
+	height: 20px;
+}
+
+/* *************************************************/
+/* Classe associata al div che contiene l'input    */
+/* *************************************************/
+.popup-button-div
+{
+	position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	width: auto;
+	text-align: center;
+}
+
+/* *************************************************/
+/* Classe associata all'Input di un InputBox       */
+/* e ai bottoni delle altre finestre modali        */
+/* *************************************************/
+.popup-input
+{
+  width: 50px;
+  height: 18px;
+}
+
+
+/* *************************************************/
+/* Classe associata all'icona di una MsgBox        */
+/* *************************************************/
+.popup-icon
+{
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* *****************************************************************/
+/* Classe associata al div contenente l'icona di una MsgBox        */
+/* *****************************************************************/
+.popup-icon-div
+{
+  position: absolute;
+  left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle MESSAGE TOOLTIP     */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* ****************************************************/
+/* Classe applicata al frame contenitore della MSGTIP */
+/* ****************************************************/
+.messagetooltip-frame-container
+{
+  z-index: 200;
+	position: absolute;
+	background-color: #FFFFE8;
+	border: solid #8EAACE 1px;
+	color: #202020;
+	font-size: 12pt;
+	
+}
+
+.messagetooltip-frame-container-info
+{
+}
+
+.messagetooltip-frame-container-warning
+{
+}
+
+.messagetooltip-frame-container-error
+{
+}
+
+.messagetooltip-border-top
+{
+  position: absolute;
+  height: 3px;
+}
+
+.messagetooltip-border-right
+{
+  position: absolute;
+  width: 3px;
+}
+
+.messagetooltip-border-bottom
+{
+  position: absolute;
+  height: 3px;
+}
+
+.messagetooltip-border-left
+{
+  position: absolute;
+  width: 3px;
+}
+
+.messagetooltip-whisker
+{
+  position: absolute;
+}
+
+/* ****************************************************/
+/* Classe applicata al DIV contenuto nella MSGTIP     */
+/* ****************************************************/
+.messagetooltip-image
+{
+  display: inline;
+  vertical-align: middle;
+}
+
+.messagetooltip-title
+{
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.messagetooltip-title-info
+{
+}
+
+.messagetooltip-title-warning
+{
+  color: blue;
+}
+
+.messagetooltip-title-error
+{
+  color: #8B0000;
+}
+
+.messagetooltip-text
+{
+  border-top: solid 1px #9EB6CE;
+  padding: 1px;
+}
+
+.messagetooltip-close-image
+{
+  position: absolute;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  top: 0px;
+}
+
+/* ****************************************************/
+/* Classe applicata alla prima cella della tabella    */
+/* dei QBETIP                                         */
+/* ****************************************************/
+.qbe-field
+{
+	font-size: 8pt;
+	width: 80px;
+	vertical-align:top;
+	padding: 0px;
+}
+
+/* ****************************************************/
+/* Classe applicata alla seconda cella della tabella  */
+/* dei QBETIP                                         */
+/* ****************************************************/
+.qbe-value
+{
+	font-size: 8pt;
+	width: 160px;
+	vertical-align: top;
+	padding: 0px;
+}
+
+/* ****************************************************/
+/* Classe applicata agli SPAN contenuti nella seconda */
+/* cella della tabella dei QBETIP                     */
+/* ****************************************************/
+.qbe-value SPAN
+{
+	font-weight: bold;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle POPUP PREVIEW       */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *****************************************************/
+/* Classe applicata all'IFrame contenuto nella PREVIEW */
+/* *****************************************************/
+.popup-preview-iframe
+{
+  
+}
+
+/* *****************************************************/
+/* Classe applicata all'IMG che rappresenta il         */
+/* pulsante di chiusura                                */
+/* *****************************************************/
+.popup-preview-close
+{
+  float: right;
+  cursor: pointer;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-right: 3px;
+	background-image: url(images/btn_bk.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+
+/* *****************************************************/
+/* Classe applicata al DIV contenitore dell'IFRAME     */
+/* *****************************************************/
+.popup-preview-content-frame
+{
+  width: 100%;
+	overflow: visible;
+	background-color: #c7d6e9;
+	position: absolute;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle POPUP DELAY         */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+.popup-delay-progress-container
+{
+  position: absolute;
+  height: 16px;
+  border: 1px solid #004d89;
+}
+
+.popup-delay-progress-box
+{
+  position: absolute;
+  height: 16px;
+  text-align: left;
+  background-color: #CCCCCC;
+  background-image: url(images/prgbarbg.gif);
+  overflow: hidden;
+}
+
+.popup-delay-inner-progress-box
+{
+  position: absolute;
+  background-color: blue;
+  height: 16px;
+  width: 30px;
+  background-image: url(images/prgbarfx.gif);
+}
+
+.popup-delay-text
+{
+  position: absolute;
+  display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-size: 10pt;
+}
+
+.popup-progress-text
+{
+  position: absolute;
+  display: inline-block;
+	padding-right: 20px;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.popup-progress-abortbutton
+{
+  display: block;
+  position: absolute;
+  width: 100px;
+}
+
+/* *************************************************/
+/* Classe applicata al DIV che contiene tutta la   */
+/* finestra popup nel caso sia abortibile          */
+/* *************************************************/
+.popup-frame-container-abortible
+{
+	border: 2px solid #8da5c4;
+	position: absolute;
+	background-color: #FAF9F4;
+	z-index: 10000;
+}
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile dei GRAFICI               */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+
+/* *************************************************/
+/* Classe applicata all' Immagine di un grafico    */
+/* *************************************************/
+.graph-img
+{
+	border: none;
+	cursor: auto;
+	vertical-align: middle;
+}
+
+/* *************************************************/
+/* Classe applicata all' Immagine di un grafico    */
+/* quando non viene trovato il framework J#        */
+/* necessario se si utilizza JFreeChart            */
+/* *************************************************/
+.graph-img-err
+{
+	border: none;
+	cursor: auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+
+/* *************************************************/
+/* Classe applicata allo span che contiene         */
+/* l'oggetto Flash                                 */
+/* *************************************************/
+.graph-flash
+{
+	border: none;
+}
+
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle TABBED VIEW         */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+
+/* *****************************************************/
+/* Classe applicata al div contenitore delle caption   */
+/* delle tab                                           */
+/* *****************************************************/
+.toolstrip-container
+{
+	background-color: transparent;
+	padding-top: 5px;
+}
+
+.toolstrip-container-left
+{
+	background-color: transparent;
+	padding-top: 5px;
+	-webkit-transform : rotate(90deg);
+	transform : rotate(90deg);
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+.toolstrip-container-right
+{
+	background-color: transparent;
+	padding-top: 5px;
+	-webkit-transform : rotate(90deg);
+	transform : rotate(90deg);
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+}
+
+.toolstrip-container-right>span
+{
+  border-top: none;
+}
+
+#top-dock-container .selected-tab-caption-container-0, #top-dock-container .tab-filler, #top-dock-container .tab-caption-container-0
+{
+  border-top: none;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span contenitore di una entry   */
+/* nella lista delle tab                                 */
+/* *******************************************************/
+.tab-caption-container-0
+{
+  vertical-align: bottom;
+  overflow-y: hidden;
+  display:inline-block;
+  border-top: 2px solid #FAF9F4;
+}
+
+.tab-caption-container-0 SPAN
+{
+	cursor: pointer;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span contenitore dell'immagine  */
+/* sinistra di una entry della tabbed                    */
+/* *******************************************************/
+.tab-left-0
+{
+  display: inline-block;
+  vertical-align: bottom;
+	padding-left: 5px;
+	height: 20px;
+	width: 2px;
+	border-bottom: #99bbe8 1px solid;
+}
+
+/* *******************************************************/
+/* Classe applicata all'immagine sinistra di una entry   */
+/* della tabbed                                          */
+/* *******************************************************/
+.tab-left-img-0
+{
+	background-image: url(images/tabbg.gif);
+}
+
+
+/* *******************************************************/
+/* Classe applicata all'immagine destra di una entry     */
+/* della tabbed                                          */
+/* *******************************************************/
+.tab-right-0
+{
+  display: inline-block;
+	vertical-align: bottom;
+  height: 20px;
+  width: 2px;
+	border-bottom: #99bbe8 1px solid;
+	background-color: #dee7f6;
+	background-image: url(images/tabbg.gif);
+}
+
+/* *******************************************************/
+/* Classe applicata allo span centrale di una caption    */
+/* della tabbed view                                     */
+/* *******************************************************/
+.tab-caption-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: #99bbe8 1px solid;
+  background-color: #dee7f6;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url(images/tabbg.gif);
+}
+
+
+/* *******************************************************/
+/* Classe applicata allo span centrale di una caption    */
+/* della tabbed view (HILIGHT)                           */
+/* *******************************************************/
+.tab-caption-hl-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: #99bbe8 1px solid;
+  background-color: #dee7f6;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url(images/tabbg.gif);
+  background-position: 0px -20px;
+}
+
+.tab-caption-hl-tableft-0
+{
+  text-align : right;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span contente il testo di una   */
+/* tab                                                   */
+/* *******************************************************/
+.tab-text-0
+{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 3px;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.tab-text-tableft-0
+{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 3px;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  -webkit-transform : rotateX(180deg) rotateY(180deg);
+  transform : rotateX(180deg) rotateY(180deg);
+}
+
+/* *******************************************************/
+/* Classe applicata all' immagine di una entry nella     */
+/* lista delle tab                                       */
+/* *******************************************************/
+.tab-img-0
+{
+  vertical-align: top;
+}
+
+.tab-caption-container-tabbottom-0,.tab-caption-container-tableft-0
+{
+  vertical-align: bottom;
+  overflow-y: hidden;
+  display:inline-block;
+}
+
+.tab-left-tabbottom-0, .tab-left-tableft-0
+{
+  display: inline-block;
+  vertical-align: bottom;
+	padding-left: 5px;
+	height: 20px;
+	width: 2px;
+	border-top: #99bbe8 1px solid;
+}
+
+.tab-left-img-tabbottom-0, .tab-left-img-tableft-0
+{
+	background-image: url(images/tabbg.gif);
+	-webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+
+.tab-caption-tabbottom-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-top: #99bbe8 1px solid;
+  border-bottom: #99bbe8 1px solid;
+  background-color: #dee7f6;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url(images/tabbg.gif);
+}
+
+.tab-caption-tableft-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-top: #99bbe8 1px solid;
+  border-bottom: #99bbe8 1px solid;
+  background-color: #dee7f6;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url(images/tabbg.gif);
+  text-align : right;
+}
+
+
+.tab-right-tabbottom-0, .tab-right-tableft-0
+{
+  display: inline-block;
+	vertical-align: bottom;
+  height: 20px;
+  width: 2px;
+	border-bottom: #99bbe8 1px solid;
+	background-color: #dee7f6;
+	background-image: url(images/tabbg.gif);
+	-webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+
+/* *******************************************************/
+/* Classe applicata allo span contenitore di una entry   */
+/* nella lista delle tab                                 */
+/* *******************************************************/
+.selected-tab-caption-container-0
+{
+  vertical-align: bottom;
+  overflow-y: hidden;
+  display:inline-block;
+  border-top: 2px solid #FAF9F4;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span contenitore dell'immagine  */
+/* sinistra di una entry della tabbed                    */
+/* *******************************************************/
+.selected-tab-left-0
+{
+  display: inline-block;
+  vertical-align: top;
+	padding-left: 5px;
+	height: 20px;
+	width: 2px;
+	border-bottom: #99bbe8 1px solid;
+}
+
+
+/* *******************************************************/
+/* Classe applicata all' immagine di una entry nella     */
+/* lista delle tab                                       */
+/* *******************************************************/
+.selected-tab-img-0
+{
+  
+}
+
+/* *******************************************************/
+/* Classe applicata all'immagine destra di una entry     */
+/* della tabbed                                          */
+/* *******************************************************/
+.selected-tab-right-0
+{
+  display: inline-block;
+  vertical-align: top;
+	height: 20px;
+	width: 2px;
+	border-bottom: #faf9f4 1px solid;
+	background-color: #faf9f4;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span centrale di una caption    */
+/* della tabbed view                                     */
+/* *******************************************************/
+.selected-tab-caption-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-top: #99bbe8 1px solid;
+  border-bottom: #faf9f4 1px solid;
+  background-color: #faf9f4;
+  color: #004d89;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span contente il testo di una   */
+/* tab                                                   */
+/* *******************************************************/
+.selected-tab-text-0
+{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 3px;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.selected-tab-text-tableft-0
+{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 3px;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  -webkit-transform : rotateX(180deg) rotateY(180deg);
+  transform : rotateX(180deg) rotateY(180deg);
+}
+
+.selected-tab-left-tabbottom-0, .selected-tab-left-tableft-0
+{
+  display: inline-block;
+  vertical-align: top;
+	padding-left: 5px;
+	height: 20px;
+	width: 2px;
+	border-top: #99bbe8 1px solid;
+}
+
+.selected-tab-left-img-tabbottom-0, .selected-tab-left-img-tableft-0
+{
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+
+.selected-tab-caption-tabbottom-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: #faf9f4 1px solid;
+  background-color: #faf9f4;
+  color: #004d89;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+.selected-tab-caption-tableft-0
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
+  line-height: 19px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: #faf9f4 1px solid;
+  background-color: #faf9f4;
+  color: #004d89;
+  font-size: 8pt;
+  font-weight: bold;
+  text-align : right;
+}
+
+.selected-tab-right-tabbottom-0, .selected-tab-right-tableft-0
+{
+  display: inline-block;
+  vertical-align: top;
+	height: 20px;
+	width: 2px;
+	border-top: #faf9f4 1px solid;
+	background-color: #faf9f4;
+	-webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+
+.selected-tab-caption-container-tabbottom-0, .selected-tab-caption-container-tableft-0
+{
+  vertical-align: bottom;
+  overflow-y: hidden;
+  display:inline-block;
+}
+
+/* *******************************************************/
+/* Classe applicata allo span che fa da riempitore       */
+/* della tabbed view                                     */
+/* *******************************************************/
+.tab-filler
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 20px;
+  border-bottom: #99bbe8 1px solid;
+  border-top: 2px solid #FAF9F4;
+  background-color: transparent;
+}
+
+.tab-filler-tabbottom, .tab-filler-tableft
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 20px;
+  border-top: #99bbe8 1px solid;
+  background-color: transparent;
+}
+
+/* *******************************************************/
+/* Classe applicata al div contenitore del frame interno */
+/* ad una tab                                            */
+/* *******************************************************/
+.tab-contentbox-0
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* *******************************************************/
+/* Classe da applicare agli oggetti per considerarli     */
+/* insivibili anche se sono a video. E' usare per        */
+/* nascondere oggetti che però mantengono le posizioni   */
+/* assolute                                              */
+/* *******************************************************/
+.invisible
+{
+  height: 0px;
+  width: 0px;
+  border: 0px;
+}
+
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile dei GRUPPI                */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *******************************************************/
+/* Classe applicata al contenitore del gruppo in lista   */
+/* *******************************************************/
+.group-list-box
+{
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  line-height: 150%;
+	background-image: url('images/pancapbg.gif');
+	background-repeat: repeat-x;
+	background-position: 0% 100%;
+}
+
+/* ********************************************************/
+/* Classe applicata al contenitore del gruppo in dettaglio*/
+/* ********************************************************/
+.group-form-box
+{
+  position: absolute;
+  border-top : 1px;
+  border-left : 0px;
+  border-right : 0px;
+  border-bottom : 0px;
+  border-style: solid;
+}
+
+/* *******************************************************/
+/* Classe applicata al titolo del gruppo fuori lista     */
+/* o in dettaglio                                        */
+/* *******************************************************/
+.group-header-box
+{
+  position: absolute;
+  white-space: nowrap;
+}
+
+
+/* *************************************************/
+/* *************************************************/
+/*                                                 */
+/*   Classi per lo stile delle PAGINE              */
+/*                                                 */
+/* *************************************************/
+/* *************************************************/
+
+/* *******************************************************/
+/* Classe applicata al DIV che contiene le pagine di     */
+/* pannello                                              */
+/* *******************************************************/
+.pages-container
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/* *******************************************************/
+/* Classe applicata al filler, lo span che fa da         */
+/* riempitore e che viene messo dopo l'ultima pagina     */
+/* *******************************************************/
+.pages-filler
+{
+  display: inline-block;
+  height: 20px;
+  border-bottom: #99bbe8 1px solid;
+  width: 5px;
+  vertical-align: bottom;
+}
+
+/* *******************************************************/
+/* Classe applicata allo SPAN contenitore della caption  */
+/* della pagina selezionata                              */
+/* *******************************************************/
+.selected-page-container-0
+{
+  display: inline-block;
+  background-color: #faf9f4;
+  height: 20px;
+  border: 0px;
+  color: #004d89;
+  font-size: 8pt;
+  font-weight: bold;
+  border-bottom: #faf9f4 1px solid;
+  border-top: 2px solid #FAF9F4;
+  vertical-align: bottom;
+}
+
+/* *******************************************************/
+/* Classe applicata allo SPAN contenitore della caption  */
+/* di una pagina non selezionata                         */
+/* *******************************************************/
+.page-container-0
+{
+  display: inline-block;
+  background-color: #e1dfc4;
+  height: 20px;
+  border: 0px;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: #99bbe8 1px solid;
+  white-space: nowrap;
+  border-top: 2px solid #FAF9F4;
+  background-image: url(images/tabbg.gif);
+  vertical-align: bottom;
+}
+
+/* *******************************************************/
+/* Classe applicata allo SPAN contenitore della caption  */
+/* di una pagina non selezionata (HILIGHT)               */
+/* *******************************************************/
+.page-container-hl-0
+{
+  display: inline-block;
+  background-color: #e1dfc4;
+  height: 20px;
+  border: 0px;
+  color: #808080;
+  font-size: 8pt;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: #99bbe8 1px solid;
+  white-space: nowrap;
+  border-top: 2px solid #FAF9F4;
+  background-image: url(images/tabbg.gif);
+  background-position: 0px 40px;
+  vertical-align: bottom;
+}
+
+.page-container-0 SPAN
+{
+	cursor: pointer;
+}
+
+/* *******************************************************/
+/* Classe applicata allo SPAN che contiene il nome della */
+/* pagina e la sua icona                                 */
+/* *******************************************************/
+.page-header-container-0
+{
+  display: inline-block;
+  height: 20px;
+  border: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: #99bbe8 1px solid;
+  vertical-align: top;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
+}
+
+
+/* *******************************************************/
+/* Classe applicata allo SPAN che contiene il nome della */
+/* pagina e la sua icona  (Selezionata)                  */
+/* *******************************************************/
+.selected-page-header-container-0
+{
+  display: inline-block;
+  height: 20px;
+  border: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: #99bbe8 1px solid;
+  vertical-align: top;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* *******************************************************/
+/* Classe applicata all'icona della pagina               */
+/* *******************************************************/
+.page-icon-0
+{
+  vertical-align: top;
+}
+
+/* *******************************************************/
+/* Classe applicata agli SPAN che fanno da separatori    */
+/* tra le varie pagine                                   */
+/* *******************************************************/
+.page-left-separator-0
+{
+  display: inline-block;
+  background-color: #faf9f4;
+  height: 20px;
+  width: 2px;
+  padding-left: 5px;
+  border-bottom: #99bbe8 1px solid;
+  vertical-align: top;
+}
+
+.page-left-image-0
+{
+  width: 2px;
+  height: 20px;
+  background-image: url(images/tabbg.gif);
+}
+
+.selected-page-left-image-0
+{
+  width: 2px;
+  height: 20px;
+}
+
+.page-right-separator-0
+{
+  
+}
+
+.right-image-0
+{
+  width: 2px;
+  height: 20px;
+}
+
+/* ************************************************** */
+/* Classi applicate ai bordi delle finestre popup     */
+/* ************************************************** */
+.popup-border-left
+{
+  position: absolute;
+  width: 8px;
+  background-image: url(images/wleft.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-border-right
+{
+  position: absolute;
+  width: 8px;
+  background-image: url(images/wright.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-border-top
+{
+  position: absolute;
+  height: 8px;
+  background-image: url(images/wtop.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-border-bottom
+{
+  position: absolute;
+  height: 8px;
+  background-image: url(images/wbottom.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-corner-top-left
+{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-image: url(images/wtl.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-corner-top-right
+{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-image: url(images/wtr.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-corner-bottom-left
+{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-image: url(images/wbl.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+.popup-corner-bottom-right
+{
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-image: url(images/wbr.gif);
+  filter:alpha(opacity=75);
+  -moz-opacity:.75;
+  opacity:.75;
+}
+
+/* Elemento DIV mostrato durante la gestione delle richieste bloccanti */
+#block-box 
+{
+  height : 100%;
+  width  : 100%;
+  border: none;
+  cursor: wait;
+  background-color: gray;
+	opacity: 0.00;
+  filter: alpha(opacity = 0);
+  display: none;
+  z-index: 9999;
+  position: absolute;
+}
+
+.abm
+{
+  vertical-align: -4px;
+}
+
+
+/************************************************************/
+/* Classe applicata al nome di un documento per evidenziarlo */
+/************************************************************/
+.DO
+{
+	color: black;
+}
+
+
+/******************************************************/
+/* Classe Applicata all'immagine di loading dei nodi  */
+/* dell'albero                                        */
+/******************************************************/
+.tree-node-loading-img
+{
+  height: 12px;
+  width: 12px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  margin-left: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+
+/******************************************************/
+/* Classe Applicata all'input della combo             */
+/******************************************************/
+.combo-input
+{
+  background-color: transparent;
+	border: none;
+	padding: 2px;
+	vertical-align: middle;
+	position: absolute;
+}
+
+
+/******************************************************/
+/* Classe Applicata all'attivatore della combo        */
+/******************************************************/
+.combo-activator
+{
+	cursor: pointer;
+	position: absolute;
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(images/aeco.gif);
+}
+
+
+/******************************************************/
+/* Classe Applicata all'immagine della combo          */
+/******************************************************/
+.combo-img
+{
+	vertical-align: middle;
+	position: absolute;
+}
+
+
+/**********************************************************/
+/* Classe Applicata all'immagine della combo disabilitata */
+/**********************************************************/
+.combo-img-dis
+{
+	vertical-align: middle;
+	position: absolute;
+}
+
+
+/******************************************************/
+/* Classe Applicata al popup con i valori della Combo */
+/******************************************************/
+.combo-popup
+{
+	border: none;
+	position: absolute;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/******************************************************/
+/* Classe Applicata alla table contenuta nel popup    */
+/******************************************************/
+.combo-popup-table
+{
+  border-collapse: collapse;
+  cell-spacing: 0px;
+}
+
+
+/******************************************************/
+/* Classe applicata all'intestazione della combo      */
+/******************************************************/
+.combo-header
+{
+  height: 14px;
+  background-color: #a3c0e6;
+}
+
+/******************************************************/
+/* Classe applicata ai TH delle intestazioni          */
+/* e ai TD delle opzioni nelle combo multi-tabellari  */
+/******************************************************/
+.combo-header-column
+{
+  font-weight: bold;
+  padding-left: 2px;
+  white-space: nowrap;
+}
+
+/******************************************************/
+/* Classe Applicata alle opzioni della combo          */
+/******************************************************/
+.combo-option
+{
+  height: 14px;
+}
+
+/********************************************************/
+/* Classe applicata ai TD delle opzioni multi-tabellare */
+/********************************************************/
+.combo-td-multi
+{
+  /* border: solid 1px black; */
+}
+
+/******************************************************/
+/* Classe Applicata al check degli item del popup     */
+/******************************************************/
+.combo-option-check
+{
+  height: 12px;
+  width: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/******************************************************/
+/* Classe Applicata all'immagine degli item del popup */
+/******************************************************/
+.combo-option-img
+{
+	vertical-align: middle;
+}
+
+/******************************************************/
+/* Classe Applicata al nome dell'opzione              */
+/******************************************************/
+.combo-option-name
+{
+  padding-left: 2px;
+  white-space: nowrap;
+}
+
+/******************************************************/
+/* Classe Applicata al testo evidenziato nel nome     */
+/* dell'opzione                                       */
+/******************************************************/
+.combo-option-name-hl
+{
+  color: #0000FF;
+}
+
+/******************************************************/
+/* Classe Applicata all'opzione una volta selezionata */
+/* (usare !important dato che viene impostato il      */
+/* backgroundColor da Javascript)                     */
+/******************************************************/
+.combo-option-selected
+{
+  background-color: #D2E0F1 !important;
+}
+
+/******************************************************/
+/* Classe Applicata ad un opzione quando il mouse     */
+/* ci passa sopra                                     */
+/******************************************************/
+.combo-option-hiligth
+{
+	background-color: #EEEEEE !important;
+}
+
+
+/******************************************************/
+/* Classe Applicata all'opzione una volta disabilitata */
+/******************************************************/
+.combo-option-disabled
+{
+  color: gray;
+}
+
+
+/******************************************************/
+/* Classe Applicata al titolo di un gruppo di opzioni */
+/******************************************************/
+.combo-group-header
+{
+  color: white;
+  text-align: left;
+	font-weight: bold;
+  background-color: darkblue;
+}
+
+/* ************************************************** */
+/* Classi applicate al campo multi upload             */
+/* ************************************************** */
+.mup-table
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mup-header-filename
+{
+  width: 50%;
+  text-align: left;
+}
+
+.mup-header-filesize
+{
+  text-align: right;
+}
+
+.mup-header-filestatus
+{
+  width: 50%;
+  text-align: left;
+}
+
+.mup-header-button
+{
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mup-row-filename
+{
+  width: 50%;
+  text-align: left;
+}
+
+.mup-row-filesize
+{
+  text-align: right;
+	white-space: nowrap;
+}
+
+.mup-row-button
+{
+  width: 22px;
+  height: 18px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mup-row-filestatus
+{
+  width: 50%;
+  background-image: url(images/prgbarbg.gif);
+  background-position: -400px;
+  background-repeat: no-repeat;
+}
+
+.mup-row-filestatus-js
+{
+  width: 95%;
+  background-image: url(images/prgbarbg.gif);
+  background-size: 0%;
+  background-repeat: no-repeat;
+  border: 1px solid #99bbe8;
+}
+
+.multi-js-upload
+{
+  cursor: pointer; 
+}
+
+/* ************************************************** */
+/* Classi applicate ai pannelli gruppati              */
+/* ************************************************** */
+.group-container
+{
+  position: absolute;
+  overflow: hidden;
+}
+.group-collapse-img
+{
+  vertical-align: middle;
+	cursor: pointer;
+	padding-right: 4px;
+}
+
+.group-label
+{
+  vertical-align: middle;
+	white-space: nowrap;
+}
+
+.badge-red
+{
+  display: inline;
+  position: relative;
+  padding: 1px 4px 1px;
+  background: #993366;
+  min-width: 9px;
+  height: 15px;
+  border-radius: 18px;
+  -ms-border-radius: 18px;
+  z-index:9999;
+  color: #fff;
+  font-weight: bold;
+  text-align:center;
+  font-size: 8pt;
+}
+
+.badge-grey
+{
+  display: inline-block;
+  position: relative;
+  padding: 0px 3px 0px;
+  background: #8b99b4;
+  border:1px solid #fff;
+  min-width: 9px;
+  height: 15px;
+  border-radius: 18px;
+  -ms-border-radius: 18px;
+  z-index:9999;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 8pt;
+}
+
+.badge-right
+{
+  float: right;
+}
+
+.badge-min
+{
+  min-width: 7px;
+  height: 13px;
+}
+
+/* ****************************************** */
+/* Classi per i DIV di IDVoice                */
+/* ****************************************** */
+.voice-microext
+{
+	-webkit-box-sizing: border-box;
+	background: red;
+	position:absolute;
+	width: 64px;
+	height: 64px;
+	padding: 7px;
+	border-radius: 32px;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -webkit-transition-duration: 250ms;
+  -webkit-transform: scale3d(2,2,1);
+  -webkit-transition-timing-function: cubic-bezier(0.600, 0.040, 0.435, 1.535); 
+  opacity:0;
+  box-shadow: 0px 0px 10px #444444;
+  z-index: 1000;
+}
+
+.voice-microint
+{
+	-webkit-box-sizing: border-box;
+	background: white;
+	-webkit-mask-image: url("images/micro.png");
+	-webkit-mask-size: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+.voice-bubble
+{
+	background: white;
+	border: 2px solid red;
+	border-radius: 8px;
+	width:300px;
+	height:24px;
+	opacity: 0;
+	position:absolute;
+	-webkit-transition-property: opacity;
+  -webkit-transition-duration: 150ms;
+  padding:10px;
+  font-size: 16pt;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1000;
+}
+
+.voice-bubble-whisker
+{
+	-webkit-box-sizing: border-box;
+	background: white;
+	border: 2px solid red;
+	border-radius: 3px;
+	-webkit-transform: rotate(225deg);
+	width:40px;
+	height:40px;
+	position:absolute;
+	-webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(0.5, black), color-stop(0.50, transparent), to(transparent));
+	z-index: 1001;
+}
+
+
+.ideditor-toolbar-img
+{
+  background-image: url('images/IDEditorIcons.png');
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 2px;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.ideditor-toolbar-sep
+{
+  height: 25px;
+  width: 1px;
+  display: inline-block;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.ideditor-main
+{
+  width: 28px;
+  margin-right: 0px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.ideditor-chooser
+{
+  background-image: url('data:image/gif;base64,R0lGODlhCgAUAIAAAAAAAP///yH5BAEAAAEALAAAAAAKABQAAAITjI+py+0PD5gUoGoTZTn6D4ZMAQA7');
+  width: 10px;
+}
+
+.ideditor-applier
+{
+  height: 2px;
+  width: 22px;
+  cursor: pointer;
+  margin-top: 21px;
+  margin-left: 2px;
+}
+
+.ideditor-toolbar
+{
+  position: absolute;
+  padding-left: 4px;
+  opacity: 0.8;
+}
+
+.ideditor-body
+{
+  position: absolute;
+  overflow: auto;
+  cursor: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  padding: 0px;
+}
+
+.ctrl-key-color
+{  
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.ctrl-colorchooser
+{
+  background-color: #DEE7F6;
+}
+
+.ctrl-color-transparent
+{
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAJ1JREFUOE+t0rERgzAMhWGNkDIl42QMNstIGYEx6FD0yBlsS0QydvGdbaH7K4iZu21EL7Eykb3QIo91B+uY3Be1FGXF5JzUYsRVDN/UsudfDIpljxeD4+KJxKB4XInGQA1qLTEwh0lrDMwh3ImBOZTxnEIQjYEedsSgHOjYR85nseM4H3bskS9H/C6DYjA0Bgjux4gY4H97j4oxM30BVJ4d/B6B9pcAAAAASUVORK5CYII=');
+}
+
+.popover-arrow-box
+{
+  overflow: hidden;
+  position: absolute;
+  height: 24px;
+  width:  23px;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-image: url(images/frmcaptionbg.gif);
+  border-top: 1px solid #8da5c4;
+  border-left: 1px solid #8da5c4;
+}
+
+.popover-arrow-border
+{
+  overflow: hidden;
+  position: absolute;
+  height: 3px;
+  width:  27px;
+  cursor: pointer;  
+  background: none;
+  z-index: 1;
+}
